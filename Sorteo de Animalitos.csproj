@@ -1,0 +1,365 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{90FE492C-7CEB-4000-B70C-4DE7181A0C39}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Sorteo_de_Animalitos</RootNamespace>
+    <AssemblyName>Sorteo de Animalitos</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\Uriel Aguirre\Desktop\Sorteo Animalitos 1.0.0.Beta\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>12</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\..\..\Debug All\Sorteo de Animalitos\Bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>EBDEE6B596EA89752E27485BE8C40E76A0EF6328</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Sorteo de Animalitos_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.Reporting, Version=13.0.19.116, Culture=neutral, PublicKeyToken=a9d7983dfcc261be">
+      <SpecificVersion>True</SpecificVersion>
+    </Reference>
+    <Reference Include="Telerik.ReportViewer.WinForms, Version=13.0.19.116, Culture=neutral, PublicKeyToken=a9d7983dfcc261be">
+      <SpecificVersion>True</SpecificVersion>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Datos\DCobroRapido.cs" />
+    <Compile Include="Datos\DConfigGral.cs" />
+    <Compile Include="Datos\DConfigSorteos.cs" />
+    <Compile Include="Datos\DConfiguracionAvanzada.cs" />
+    <Compile Include="Datos\DGanadores.cs" />
+    <Compile Include="Datos\DPermisos.cs" />
+    <Compile Include="Datos\DSorteos.cs" />
+    <Compile Include="Datos\DSucursales.cs" />
+    <Compile Include="Datos\DUsuarios.cs" />
+    <Compile Include="Datos\DUsuariosSuc.cs" />
+    <Compile Include="Datos\DVender.cs" />
+    <Compile Include="Datos\DVentas.cs" />
+    <Compile Include="Datos\DTicket.cs" />
+    <Compile Include="Logica\Ambiente.cs" />
+    <Compile Include="Datos\ConexionBD.cs" />
+    <Compile Include="Logica\LCobroRapido.cs" />
+    <Compile Include="Logica\LConfig.cs" />
+    <Compile Include="Logica\LConfigGral.cs" />
+    <Compile Include="Logica\LConfiguracionAvanzada.cs" />
+    <Compile Include="Logica\LGanadores.cs" />
+    <Compile Include="Logica\LPermisos.cs" />
+    <Compile Include="Logica\LSucursales.cs" />
+    <Compile Include="Logica\LTicket.cs" />
+    <Compile Include="Logica\LUsuarios.cs" />
+    <Compile Include="Logica\LUsuariosSuc.cs" />
+    <Compile Include="Logica\LVender.cs" />
+    <Compile Include="Presentacion\controlCatalogoAnimalitos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Presentacion\controlCatalogoAnimalitos.Designer.cs">
+      <DependentUpon>controlCatalogoAnimalitos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\ControlConfiguracion.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Presentacion\ControlConfiguracion.Designer.cs">
+      <DependentUpon>ControlConfiguracion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\ControlFormatoTicket.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Presentacion\ControlFormatoTicket.Designer.cs">
+      <DependentUpon>ControlFormatoTicket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\controlVentas.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Presentacion\controlVentas.Designer.cs">
+      <DependentUpon>controlVentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\controlSorteos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Presentacion\controlSorteos.Designer.cs">
+      <DependentUpon>controlSorteos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Datos\DAnimales.cs" />
+    <Compile Include="Presentacion\ControlVender.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Presentacion\ControlVender.Designer.cs">
+      <DependentUpon>ControlVender.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Formatos\TicketVenta.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Formatos\TicketVenta.Designer.cs">
+      <DependentUpon>TicketVenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\frmCobroRapido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\frmCobroRapido.Designer.cs">
+      <DependentUpon>frmCobroRapido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\frmGanadores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\frmGanadores.Designer.cs">
+      <DependentUpon>frmGanadores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\frmImporte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\frmImporte.Designer.cs">
+      <DependentUpon>frmImporte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\frmPermisos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\frmPermisos.Designer.cs">
+      <DependentUpon>frmPermisos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\frmSorteoAnimalitos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\frmSorteoAnimalitos.Designer.cs">
+      <DependentUpon>frmSorteoAnimalitos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Logica\LAnimales.cs" />
+    <Compile Include="Presentacion\ControlReporteSorteosPeriodo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Presentacion\ControlReporteSorteosPeriodo.Designer.cs">
+      <DependentUpon>ControlReporteSorteosPeriodo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Reportes\ReporteSorteo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Reportes\ReporteSorteo.Designer.cs">
+      <DependentUpon>ReporteSorteo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Logica\Sorteo.cs" />
+    <EmbeddedResource Include="Presentacion\controlCatalogoAnimalitos.resx">
+      <DependentUpon>controlCatalogoAnimalitos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\ControlConfiguracion.resx">
+      <DependentUpon>ControlConfiguracion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\ControlFormatoTicket.resx">
+      <DependentUpon>ControlFormatoTicket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\controlVentas.resx">
+      <DependentUpon>controlVentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\controlSorteos.resx">
+      <DependentUpon>controlSorteos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\ControlVender.resx">
+      <DependentUpon>ControlVender.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Formatos\TicketVenta.resx">
+      <DependentUpon>TicketVenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\frmCobroRapido.resx">
+      <DependentUpon>frmCobroRapido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\frmGanadores.resx">
+      <DependentUpon>frmGanadores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\frmImporte.resx">
+      <DependentUpon>frmImporte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\frmPermisos.resx">
+      <DependentUpon>frmPermisos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\frmSorteoAnimalitos.resx">
+      <DependentUpon>frmSorteoAnimalitos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\ControlReporteSorteosPeriodo.resx">
+      <DependentUpon>ControlReporteSorteosPeriodo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Reportes\ReporteSorteo.resx">
+      <DependentUpon>ReporteSorteo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Sorteo de Animalitos_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aprobar%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salida.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\claro128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\guardar-el-archivo128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aprobar%281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cerrar-sesion %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aprobar%281%292.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\configuraciones32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\datos-rojos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sorteo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cerrar-sesion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\borrador.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lapiz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mas128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mas1281.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\comercio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reporte-de-negocios.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logoPrueba.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logoPrueba1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imprimir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anadir-al-carrito.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trofeo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pagar32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\show32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CandadoCerrado32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CandadoAbierto32.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

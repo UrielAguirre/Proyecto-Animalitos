@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="_UpgradeWizard_Files\UpgradeWizardLog.xslt"?>
+<log>
+  <event>Get project references.</event>
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\Users\Uriel Aguirre\Desktop\bds\Sorteo de Animalitos\Sorteo de Animalitos.csproj" />
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\Users\Uriel Aguirre\Desktop\bds\Sorteo de Animalitos\App.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="C:\Users\Uriel Aguirre\Desktop\bds\Sorteo de Animalitos\App.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="C:\Users\Uriel Aguirre\Desktop\bds\Sorteo de Animalitos\App.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="C:\Users\Uriel Aguirre\Desktop\bds\Sorteo de Animalitos\App.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="C:\Users\Uriel Aguirre\Desktop\bds\Sorteo de Animalitos\App.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="C:\Users\Uriel Aguirre\Desktop\bds\Sorteo de Animalitos\App.config" />
+  <event action="Analyze" type="Success" name="App.config" path="C:\Users\Uriel Aguirre\Desktop\bds\Sorteo de Animalitos\App.config" />
+  <event action="Analyze" type="Success" name="controlCatalogoAnimalitos.resx" path="C:\Users\Uriel Aguirre\Desktop\bds\Sorteo de Animalitos\Presentacion\controlCatalogoAnimalitos.resx" />
+  <event action="Analyze" type="Success" name="ControlConfiguracion.resx" path="C:\Users\Uriel Aguirre\Desktop\bds\Sorteo de Animalitos\Presentacion\ControlConfiguracion.resx" />
+  <event action="Analyze" type="Success" name="controlSorteos.resx" path="C:\Users\Uriel Aguirre\Desktop\bds\Sorteo de Animalitos\Presentacion\controlSorteos.resx" />
+  <event action="Analyze" type="Success" name="ControlVender.resx" path="C:\Users\Uriel Aguirre\Desktop\bds\Sorteo de Animalitos\Presentacion\ControlVender.resx" />
+  <event action="Analyze" type="Success" name="frmCobroRapido.resx" path="C:\Users\Uriel Aguirre\Desktop\bds\Sorteo de Animalitos\Presentacion\frmCobroRapido.resx" />
+  <event action="Analyze" type="Success" name="frmImporte.resx" path="C:\Users\Uriel Aguirre\Desktop\bds\Sorteo de Animalitos\Presentacion\frmImporte.resx" />
+  <event action="Analyze" type="Success" name="frmLogin.resx" path="C:\Users\Uriel Aguirre\Desktop\bds\Sorteo de Animalitos\Presentacion\frmLogin.resx" />
+  <event action="Analyze" type="Success" name="frmSorteoAnimalitos.resx" path="C:\Users\Uriel Aguirre\Desktop\bds\Sorteo de Animalitos\Presentacion\frmSorteoAnimalitos.resx" />
+  <event action="Analyze" type="Success" name="Resources.resx" path="C:\Users\Uriel Aguirre\Desktop\bds\Sorteo de Animalitos\Properties\Resources.resx" />
+  <event action="Analyze" type="Success" name="Sorteo de Animalitos" path="C:\Users\Uriel Aguirre\Desktop\bds\Sorteo de Animalitos\Sorteo de Animalitos.csproj" />
+  <event action="Analyze" type="Success" name="Sorteo de Animalitos" path="C:\Users\Uriel Aguirre\Desktop\bds\Sorteo de Animalitos\Sorteo de Animalitos.sln" />
+  <event action="Backup" type="Success" name="Sorteo de Animalitos" path="C:\Users\Uriel Aguirre\Desktop\bds\Sorteo de Animalitos\Sorteo de Animalitos.csproj" />
+  <event action="Upgrade" type="Success" name="Assembly References" path="C:\Users\Uriel Aguirre\Desktop\bds\Sorteo de Animalitos\Sorteo de Animalitos.csproj" />
+  <event action="Upgrade" type="Success" name="Sorteo de Animalitos" path="C:\Users\Uriel Aguirre\Desktop\bds\Sorteo de Animalitos\Sorteo de Animalitos.csproj" />
+  <event action="Upgrade" type="Success" name="Sorteo de Animalitos" path="C:\Users\Uriel Aguirre\Desktop\bds\Sorteo de Animalitos\Sorteo de Animalitos.sln" />
+</log>

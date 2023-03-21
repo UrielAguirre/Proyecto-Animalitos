@@ -1,0 +1,103 @@
+C:\Users\Uriel Aguirre\source\repos\Sorteo de Animalitos\obj\Debug\Sorteo de Animalitos.csproj.AssemblyReference.cache
+C:\Users\Uriel Aguirre\source\repos\Sorteo de Animalitos\obj\Debug\Sorteo de Animalitos.csproj.SuggestedBindingRedirects.cache
+C:\Users\Uriel Aguirre\source\repos\Sorteo de Animalitos\obj\Debug\Sorteo_de_Animalitos.frmSorteoAnimalitos.resources
+C:\Users\Uriel Aguirre\source\repos\Sorteo de Animalitos\obj\Debug\Sorteo_de_Animalitos.Properties.Resources.resources
+C:\Users\Uriel Aguirre\source\repos\Sorteo de Animalitos\obj\Debug\Sorteo de Animalitos.csproj.GenerateResource.cache
+C:\Users\Uriel Aguirre\source\repos\Sorteo de Animalitos\obj\Debug\Sorteo de Animalitos.csproj.CoreCompileInputs.cache
+C:\Users\Uriel Aguirre\source\repos\Sorteo de Animalitos\bin\Debug\Sorteo de Animalitos.exe.config
+C:\Users\Uriel Aguirre\source\repos\Sorteo de Animalitos\bin\Debug\Sorteo de Animalitos.exe
+C:\Users\Uriel Aguirre\source\repos\Sorteo de Animalitos\bin\Debug\Sorteo de Animalitos.pdb
+C:\Users\Uriel Aguirre\source\repos\Sorteo de Animalitos\obj\Debug\Sorteo de Animalitos.exe
+C:\Users\Uriel Aguirre\source\repos\Sorteo de Animalitos\obj\Debug\Sorteo de Animalitos.pdb
+C:\Users\Uriel Aguirre\source\repos\Sorteo de Animalitos\obj\Debug\Sorteo_de_Animalitos.controlCatalogoAnimalitos.resources
+E:\Uriel\SIE Desarrollos\Proyectos Desarrollos\Proyectos C#\Sorteo de Animalitos\obj\Debug\Sorteo de Animalitos.csproj.AssemblyReference.cache
+E:\Uriel\SIE Desarrollos\Proyectos Desarrollos\Proyectos C#\Sorteo de Animalitos\obj\Debug\Sorteo de Animalitos.csproj.SuggestedBindingRedirects.cache
+E:\Uriel\SIE Desarrollos\Proyectos Desarrollos\Proyectos C#\Sorteo de Animalitos\obj\Debug\Sorteo_de_Animalitos.controlCatalogoAnimalitos.resources
+E:\Uriel\SIE Desarrollos\Proyectos Desarrollos\Proyectos C#\Sorteo de Animalitos\obj\Debug\Sorteo_de_Animalitos.frmSorteoAnimalitos.resources
+E:\Uriel\SIE Desarrollos\Proyectos Desarrollos\Proyectos C#\Sorteo de Animalitos\obj\Debug\Sorteo_de_Animalitos.Properties.Resources.resources
+E:\Uriel\SIE Desarrollos\Proyectos Desarrollos\Proyectos C#\Sorteo de Animalitos\obj\Debug\Sorteo de Animalitos.csproj.GenerateResource.cache
+E:\Uriel\SIE Desarrollos\Proyectos Desarrollos\Proyectos C#\Sorteo de Animalitos\obj\Debug\Sorteo de Animalitos.csproj.CoreCompileInputs.cache
+E:\Uriel\SIE Desarrollos\Proyectos Desarrollos\Proyectos C#\Sorteo de Animalitos\obj\Debug\Sorteo de Animalitos.exe
+E:\Uriel\SIE Desarrollos\Proyectos Desarrollos\Proyectos C#\Sorteo de Animalitos\obj\Debug\Sorteo de Animalitos.pdb
+E:\Uriel\SIE Desarrollos\Proyectos Desarrollos\Proyectos C#\Sorteo de Animalitos\bin\Debug\Sorteo de Animalitos.exe.config
+E:\Uriel\SIE Desarrollos\Proyectos Desarrollos\Proyectos C#\Sorteo de Animalitos\bin\Debug\Sorteo de Animalitos.exe
+E:\Uriel\SIE Desarrollos\Proyectos Desarrollos\Proyectos C#\Sorteo de Animalitos\bin\Debug\Sorteo de Animalitos.pdb
+E:\Uriel\SIE Desarrollos\Proyectos Desarrollos\Proyectos C#\Sorteo de Animalitos\obj\Debug\Sorteo_de_Animalitos.controlSorteos.resources
+E:\Uriel\SIE Desarrollos\Proyectos Desarrollos\Proyectos C#\Sorteo de Animalitos\bin\Debug\Sorteo de Animalitos.exe.manifest
+E:\Uriel\SIE Desarrollos\Proyectos Desarrollos\Proyectos C#\Sorteo de Animalitos\bin\Debug\Sorteo de Animalitos.application
+E:\Uriel\SIE Desarrollos\Proyectos Desarrollos\Proyectos C#\Sorteo de Animalitos\obj\Debug\Sorteo de Animalitos.exe.manifest
+E:\Uriel\SIE Desarrollos\Proyectos Desarrollos\Proyectos C#\Sorteo de Animalitos\obj\Debug\Sorteo de Animalitos.application
+C:\Users\Uriel Aguirre\Desktop\bds\Sorteo de Animalitos\bin\Debug\Sorteo de Animalitos.exe.config
+C:\Users\Uriel Aguirre\Desktop\bds\Sorteo de Animalitos\bin\Debug\Sorteo de Animalitos.exe.manifest
+C:\Users\Uriel Aguirre\Desktop\bds\Sorteo de Animalitos\bin\Debug\Sorteo de Animalitos.application
+C:\Users\Uriel Aguirre\Desktop\bds\Sorteo de Animalitos\bin\Debug\Sorteo de Animalitos.exe
+C:\Users\Uriel Aguirre\Desktop\bds\Sorteo de Animalitos\bin\Debug\Sorteo de Animalitos.pdb
+C:\Users\Uriel Aguirre\Desktop\bds\Sorteo de Animalitos\obj\Debug\Sorteo de Animalitos.csproj.AssemblyReference.cache
+C:\Users\Uriel Aguirre\Desktop\bds\Sorteo de Animalitos\obj\Debug\Sorteo_de_Animalitos.controlCatalogoAnimalitos.resources
+C:\Users\Uriel Aguirre\Desktop\bds\Sorteo de Animalitos\obj\Debug\Sorteo_de_Animalitos.ControlConfiguracion.resources
+C:\Users\Uriel Aguirre\Desktop\bds\Sorteo de Animalitos\obj\Debug\Sorteo_de_Animalitos.controlSorteos.resources
+C:\Users\Uriel Aguirre\Desktop\bds\Sorteo de Animalitos\obj\Debug\Sorteo_de_Animalitos.Presentacion.ControlVender.resources
+C:\Users\Uriel Aguirre\Desktop\bds\Sorteo de Animalitos\obj\Debug\Sorteo_de_Animalitos.Presentacion.frmCobroRapido.resources
+C:\Users\Uriel Aguirre\Desktop\bds\Sorteo de Animalitos\obj\Debug\Sorteo_de_Animalitos.Presentacion.frmImporte.resources
+C:\Users\Uriel Aguirre\Desktop\bds\Sorteo de Animalitos\obj\Debug\Sorteo_de_Animalitos.frmSorteoAnimalitos.resources
+C:\Users\Uriel Aguirre\Desktop\bds\Sorteo de Animalitos\obj\Debug\Sorteo_de_Animalitos.Properties.Resources.resources
+C:\Users\Uriel Aguirre\Desktop\bds\Sorteo de Animalitos\obj\Debug\Sorteo de Animalitos.csproj.GenerateResource.cache
+C:\Users\Uriel Aguirre\Desktop\bds\Sorteo de Animalitos\obj\Debug\Sorteo de Animalitos.csproj.CoreCompileInputs.cache
+C:\Users\Uriel Aguirre\Desktop\bds\Sorteo de Animalitos\obj\Debug\Sorteo de Animalitos.exe.manifest
+C:\Users\Uriel Aguirre\Desktop\bds\Sorteo de Animalitos\obj\Debug\Sorteo de Animalitos.application
+C:\Users\Uriel Aguirre\Desktop\bds\Sorteo de Animalitos\obj\Debug\Sorteo de Animalitos.exe
+C:\Users\Uriel Aguirre\Desktop\bds\Sorteo de Animalitos\obj\Debug\Sorteo de Animalitos.pdb
+C:\Users\Uriel Aguirre\Desktop\bds\Sorteo de Animalitos\obj\Debug\Sorteo_de_Animalitos.Presentacion.frmLogin.resources
+C:\Users\Uriel Aguirre\Desktop\bds\Sorteo de Animalitos\bin\Debug\Telerik.Reporting.dll
+C:\Users\Uriel Aguirre\Desktop\bds\Sorteo de Animalitos\bin\Debug\Telerik.ReportViewer.WinForms.dll
+C:\Users\Uriel Aguirre\Desktop\bds\Sorteo de Animalitos\bin\Debug\Telerik.Reporting.pdb
+C:\Users\Uriel Aguirre\Desktop\bds\Sorteo de Animalitos\bin\Debug\Telerik.Reporting.xml
+C:\Users\Uriel Aguirre\Desktop\bds\Sorteo de Animalitos\bin\Debug\Telerik.ReportViewer.WinForms.pdb
+C:\Users\Uriel Aguirre\Desktop\bds\Sorteo de Animalitos\bin\Debug\Telerik.ReportViewer.WinForms.xml
+C:\Users\Uriel Aguirre\Desktop\bds\Sorteo de Animalitos\obj\Debug\Sorteo_de_Animalitos.Presentacion.ControlReporteSorteosPeriodo.resources
+C:\Users\Uriel Aguirre\Desktop\bds\Sorteo de Animalitos\obj\Debug\Sorteo_de_Animalitos.Presentacion.Reportes.ReporteSorteo.resources
+C:\Users\Uriel Aguirre\Desktop\bds\Sorteo de Animalitos\obj\Debug\Sorteo de Animalitos.exe.licenses
+C:\Users\Uriel Aguirre\Desktop\bds\Sorteo de Animalitos\obj\Debug\Sorteo de Animalitos.csproj.CopyComplete
+C:\Users\Uriel Aguirre\Desktop\bds\Sorteo de Animalitos\obj\Debug\Sorteo_de_Animalitos.Presentacion.Formatos.TicketVenta.resources
+C:\Users\Uriel Aguirre\Desktop\bds\Sorteo de Animalitos\obj\Debug\Sorteo_de_Animalitos.Presentacion.ControlFormatoTicket.resources
+F:\Uriel\SIE Desarrollos\Proyectos Desarrollos\Proyectos C#\Sorteo de Animalitos\bin\Debug\Sorteo de Animalitos.exe.config
+F:\Uriel\SIE Desarrollos\Proyectos Desarrollos\Proyectos C#\Sorteo de Animalitos\bin\Debug\Sorteo de Animalitos.exe.manifest
+F:\Uriel\SIE Desarrollos\Proyectos Desarrollos\Proyectos C#\Sorteo de Animalitos\bin\Debug\Sorteo de Animalitos.application
+F:\Uriel\SIE Desarrollos\Proyectos Desarrollos\Proyectos C#\Sorteo de Animalitos\bin\Debug\Sorteo de Animalitos.exe
+F:\Uriel\SIE Desarrollos\Proyectos Desarrollos\Proyectos C#\Sorteo de Animalitos\bin\Debug\Sorteo de Animalitos.pdb
+F:\Uriel\SIE Desarrollos\Proyectos Desarrollos\Proyectos C#\Sorteo de Animalitos\bin\Debug\Telerik.Reporting.dll
+F:\Uriel\SIE Desarrollos\Proyectos Desarrollos\Proyectos C#\Sorteo de Animalitos\bin\Debug\Telerik.ReportViewer.WinForms.dll
+F:\Uriel\SIE Desarrollos\Proyectos Desarrollos\Proyectos C#\Sorteo de Animalitos\bin\Debug\Telerik.Reporting.pdb
+F:\Uriel\SIE Desarrollos\Proyectos Desarrollos\Proyectos C#\Sorteo de Animalitos\bin\Debug\Telerik.Reporting.xml
+F:\Uriel\SIE Desarrollos\Proyectos Desarrollos\Proyectos C#\Sorteo de Animalitos\bin\Debug\Telerik.ReportViewer.WinForms.pdb
+F:\Uriel\SIE Desarrollos\Proyectos Desarrollos\Proyectos C#\Sorteo de Animalitos\bin\Debug\Telerik.ReportViewer.WinForms.xml
+F:\Uriel\SIE Desarrollos\Proyectos Desarrollos\Proyectos C#\Sorteo de Animalitos\obj\Debug\Sorteo de Animalitos.csproj.AssemblyReference.cache
+F:\Uriel\SIE Desarrollos\Proyectos Desarrollos\Proyectos C#\Sorteo de Animalitos\obj\Debug\Sorteo_de_Animalitos.controlCatalogoAnimalitos.resources
+F:\Uriel\SIE Desarrollos\Proyectos Desarrollos\Proyectos C#\Sorteo de Animalitos\obj\Debug\Sorteo_de_Animalitos.ControlConfiguracion.resources
+F:\Uriel\SIE Desarrollos\Proyectos Desarrollos\Proyectos C#\Sorteo de Animalitos\obj\Debug\Sorteo_de_Animalitos.Presentacion.ControlFormatoTicket.resources
+F:\Uriel\SIE Desarrollos\Proyectos Desarrollos\Proyectos C#\Sorteo de Animalitos\obj\Debug\Sorteo_de_Animalitos.controlSorteos.resources
+F:\Uriel\SIE Desarrollos\Proyectos Desarrollos\Proyectos C#\Sorteo de Animalitos\obj\Debug\Sorteo_de_Animalitos.Presentacion.ControlVender.resources
+F:\Uriel\SIE Desarrollos\Proyectos Desarrollos\Proyectos C#\Sorteo de Animalitos\obj\Debug\Sorteo_de_Animalitos.Presentacion.Formatos.TicketVenta.resources
+F:\Uriel\SIE Desarrollos\Proyectos Desarrollos\Proyectos C#\Sorteo de Animalitos\obj\Debug\Sorteo_de_Animalitos.Presentacion.frmCobroRapido.resources
+F:\Uriel\SIE Desarrollos\Proyectos Desarrollos\Proyectos C#\Sorteo de Animalitos\obj\Debug\Sorteo_de_Animalitos.Presentacion.frmImporte.resources
+F:\Uriel\SIE Desarrollos\Proyectos Desarrollos\Proyectos C#\Sorteo de Animalitos\obj\Debug\Sorteo_de_Animalitos.Presentacion.frmLogin.resources
+F:\Uriel\SIE Desarrollos\Proyectos Desarrollos\Proyectos C#\Sorteo de Animalitos\obj\Debug\Sorteo_de_Animalitos.frmSorteoAnimalitos.resources
+F:\Uriel\SIE Desarrollos\Proyectos Desarrollos\Proyectos C#\Sorteo de Animalitos\obj\Debug\Sorteo_de_Animalitos.Presentacion.ControlReporteSorteosPeriodo.resources
+F:\Uriel\SIE Desarrollos\Proyectos Desarrollos\Proyectos C#\Sorteo de Animalitos\obj\Debug\Sorteo_de_Animalitos.Presentacion.Reportes.ReporteSorteo.resources
+F:\Uriel\SIE Desarrollos\Proyectos Desarrollos\Proyectos C#\Sorteo de Animalitos\obj\Debug\Sorteo_de_Animalitos.Properties.Resources.resources
+F:\Uriel\SIE Desarrollos\Proyectos Desarrollos\Proyectos C#\Sorteo de Animalitos\obj\Debug\Sorteo de Animalitos.csproj.GenerateResource.cache
+F:\Uriel\SIE Desarrollos\Proyectos Desarrollos\Proyectos C#\Sorteo de Animalitos\obj\Debug\Sorteo de Animalitos.exe.licenses
+F:\Uriel\SIE Desarrollos\Proyectos Desarrollos\Proyectos C#\Sorteo de Animalitos\obj\Debug\Sorteo de Animalitos.csproj.CoreCompileInputs.cache
+F:\Uriel\SIE Desarrollos\Proyectos Desarrollos\Proyectos C#\Sorteo de Animalitos\obj\Debug\Sorteo de Animalitos.exe.manifest
+F:\Uriel\SIE Desarrollos\Proyectos Desarrollos\Proyectos C#\Sorteo de Animalitos\obj\Debug\Sorteo de Animalitos.application
+F:\Uriel\SIE Desarrollos\Proyectos Desarrollos\Proyectos C#\Sorteo de Animalitos\obj\Debug\Sorteo de Animalitos.csproj.CopyComplete
+F:\Uriel\SIE Desarrollos\Proyectos Desarrollos\Proyectos C#\Sorteo de Animalitos\obj\Debug\Sorteo de Animalitos.exe
+F:\Uriel\SIE Desarrollos\Proyectos Desarrollos\Proyectos C#\Sorteo de Animalitos\obj\Debug\Sorteo de Animalitos.pdb
+F:\Uriel\SIE Desarrollos\Proyectos Desarrollos\Proyectos C#\Sorteo de Animalitos\obj\Debug\Sorteo_de_Animalitos.controlVentas.resources
+F:\Uriel\SIE Desarrollos\Proyectos Desarrollos\Proyectos C#\Sorteo de Animalitos\obj\Debug\Sorteo_de_Animalitos.Presentacion.frmGanadores.resources
+F:\Debug All\Sorteo de Animalitos\Bin\Debug\Sorteo de Animalitos.exe.config
+F:\Debug All\Sorteo de Animalitos\Bin\Debug\Sorteo de Animalitos.exe.manifest
+F:\Debug All\Sorteo de Animalitos\Bin\Debug\Sorteo de Animalitos.application
+F:\Debug All\Sorteo de Animalitos\Bin\Debug\Sorteo de Animalitos.exe
+F:\Debug All\Sorteo de Animalitos\Bin\Debug\Sorteo de Animalitos.pdb
+F:\Uriel\SIE Desarrollos\Proyectos Desarrollos\Proyectos C#\Sorteo de Animalitos\obj\Debug\Sorteo_de_Animalitos.Presentacion.frmPermisos.resources
