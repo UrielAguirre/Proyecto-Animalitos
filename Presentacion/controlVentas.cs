@@ -15,6 +15,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Telerik.Reporting.Processing;
 using Telerik.Reporting.Drawing;
+using Sorteo_de_Animalitos.Logica;
 
 namespace Sorteo_de_Animalitos
 {
@@ -37,19 +38,21 @@ namespace Sorteo_de_Animalitos
             dtgVentas.DataSource = dt;
 
             dtgVentas.Columns[0].Width = 70;
-            dtgVentas.Columns[1].Width = 100;
+            dtgVentas.Columns[1].Width = 70;
             dtgVentas.Columns[2].Width = 100;
-            dtgVentas.Columns[3].Visible = false;
-            dtgVentas.Columns[4].Width = 300;
-            dtgVentas.Columns[5].Width = 100;
-            dtgVentas.Columns[6].Width = 150;
-            dtgVentas.Columns[7].Width = 60;
+            dtgVentas.Columns[3].Width = 100;
+            dtgVentas.Columns[4].Width = 100;
+            dtgVentas.Columns[5].Visible = false;
+            dtgVentas.Columns[6].Width = 300;
+            dtgVentas.Columns[7].Width = 100;
+            dtgVentas.Columns[8].Width = 150;
+            dtgVentas.Columns[9].Width = 60;
             //dtgRegistros.Columns[2].Width = 100;
 
             // dtgVentas.Columns[5].Visible = false;
             //dtgVentas.Columns[3].DefaultCellStyle.Format = "hh:mm tt";
-            dtgVentas.Columns[5].DefaultCellStyle.Format = "N";
-            dtgVentas.Columns[5].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
+            dtgVentas.Columns[7].DefaultCellStyle.Format = "N";
+            dtgVentas.Columns[7].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
         }
 
         private void MuestraPartidas(int nVenta)
@@ -98,17 +101,53 @@ namespace Sorteo_de_Animalitos
 
                     if (result == DialogResult.OK)
                     {
-                        ImprimeTicket(Convert.ToInt32(dtgVentas[8, dtgVentas.CurrentCell.RowIndex].Value.ToString()));
+                        ImprimeTicket(Convert.ToInt32(dtgVentas[9, dtgVentas.CurrentCell.RowIndex].Value.ToString()));
+                    }
+                }
+            }
+
+            if (e.ColumnIndex == dtgVentas.Columns["Cancelar"].Index)
+            {
+                MessageBox.Show(dtgVentas[10, dtgVentas.CurrentCell.RowIndex].Value.ToString());
+                if (Ambiente.AsignaPermisos(this.Name + "dtgRegistros", "Cancelar", "DataGrid") != 0)
+                {
+                    DialogResult result = MessageBox.Show("¿Desea cancelar la venta?", "Venta", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2);
+
+                    if (result == DialogResult.OK)
+                    {
+                        CancelaVenta(Convert.ToInt32(dtgVentas[10, dtgVentas.CurrentCell.RowIndex].Value.ToString()));
                     }
                 }
             }
 
             if (e.ColumnIndex == dtgVentas.Columns["Imprimir"].Index)
             {
-                MuestraPartidas(Convert.ToInt32(dtgVentas[8, dtgVentas.CurrentCell.RowIndex].Value.ToString()));
+                MuestraPartidas(Convert.ToInt32(dtgVentas[10, dtgVentas.CurrentCell.RowIndex].Value.ToString()));
             }
         }
-       
+
+        private void CancelaVenta(int nVenta)
+        {
+            LVentas parametros = new LVentas();
+            DVentas funcion = new DVentas();
+
+            parametros.nVenta = nVenta;
+            parametros.Usuario = Ambiente.Usuario;
+            parametros.UsuFecha = DateTime.Now;
+            parametros.UsuHora = Convert.ToDateTime("00:00");
+            parametros.Estacion = "";
+            parametros.Sucursal = Ambiente.Sucursal;
+
+            if (funcion.ValidaCancelaVentas(nVenta)== false)
+            {
+                return;
+            }
+            if (funcion.CancelaVentas(parametros)==true)
+            {               
+                MuestraVentas(0);
+            }
+
+        }
         private void btnVender_Click(object sender, EventArgs e)
         {
             if (Ambiente.AsignaPermisos(this.Name, sender, "Button") != 0)

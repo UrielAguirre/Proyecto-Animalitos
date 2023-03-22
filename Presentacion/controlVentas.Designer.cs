@@ -37,19 +37,20 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtNoVenta = new System.Windows.Forms.TextBox();
             this.reportViewer1 = new Telerik.ReportViewer.WinForms.ReportViewer();
-            this.btnVender = new System.Windows.Forms.Button();
             this.dtHora = new System.Windows.Forms.DateTimePicker();
             this.label15 = new System.Windows.Forms.Label();
             this.dtgPartidas = new System.Windows.Forms.DataGridView();
-            this.btnGeneraSorteo = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.dtFechaFinal = new System.Windows.Forms.DateTimePicker();
             this.dtFechaInicial = new System.Windows.Forms.DateTimePicker();
             this.dtgVentas = new System.Windows.Forms.DataGridView();
-            this.Imprimir = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.btnVender = new System.Windows.Forms.Button();
+            this.btnGeneraSorteo = new System.Windows.Forms.Button();
+            this.Cancelar = new System.Windows.Forms.DataGridViewImageColumn();
+            this.Imprimir = new System.Windows.Forms.DataGridViewImageColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgPartidas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgVentas)).BeginInit();
@@ -116,20 +117,6 @@
             this.reportViewer1.TabIndex = 70;
             this.reportViewer1.Visible = false;
             // 
-            // btnVender
-            // 
-            this.btnVender.BackgroundImage = global::Sorteo_de_Animalitos.Properties.Resources.anadir_al_carrito;
-            this.btnVender.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnVender.FlatAppearance.BorderSize = 0;
-            this.btnVender.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVender.Location = new System.Drawing.Point(424, 18);
-            this.btnVender.Name = "btnVender";
-            this.btnVender.Size = new System.Drawing.Size(58, 47);
-            this.btnVender.TabIndex = 69;
-            this.btnVender.TabStop = false;
-            this.btnVender.UseVisualStyleBackColor = true;
-            this.btnVender.Click += new System.EventHandler(this.btnVender_Click);
-            // 
             // dtHora
             // 
             this.dtHora.CustomFormat = "hh:mm tt";
@@ -183,21 +170,6 @@
             this.dtgPartidas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dtgPartidas.Size = new System.Drawing.Size(534, 584);
             this.dtgPartidas.TabIndex = 59;
-            // 
-            // btnGeneraSorteo
-            // 
-            this.btnGeneraSorteo.BackgroundImage = global::Sorteo_de_Animalitos.Properties.Resources.mas1281;
-            this.btnGeneraSorteo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnGeneraSorteo.FlatAppearance.BorderSize = 0;
-            this.btnGeneraSorteo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGeneraSorteo.Location = new System.Drawing.Point(214, 17);
-            this.btnGeneraSorteo.Name = "btnGeneraSorteo";
-            this.btnGeneraSorteo.Size = new System.Drawing.Size(58, 47);
-            this.btnGeneraSorteo.TabIndex = 57;
-            this.btnGeneraSorteo.TabStop = false;
-            this.btnGeneraSorteo.UseVisualStyleBackColor = true;
-            this.btnGeneraSorteo.Visible = false;
-            
             // 
             // label2
             // 
@@ -256,6 +228,7 @@
             this.dtgVentas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dtgVentas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dtgVentas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Cancelar,
             this.Imprimir});
             this.dtgVentas.Location = new System.Drawing.Point(11, 99);
             this.dtgVentas.MultiSelect = false;
@@ -272,15 +245,6 @@
             this.dtgVentas.Size = new System.Drawing.Size(784, 584);
             this.dtgVentas.TabIndex = 51;
             this.dtgVentas.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgRegistros_CellClick);
-            // 
-            // Imprimir
-            // 
-            this.Imprimir.Frozen = true;
-            this.Imprimir.HeaderText = "";
-            this.Imprimir.Image = global::Sorteo_de_Animalitos.Properties.Resources.imprimir;
-            this.Imprimir.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.Imprimir.Name = "Imprimir";
-            this.Imprimir.ReadOnly = true;
             // 
             // dataGridViewImageColumn1
             // 
@@ -300,6 +264,50 @@
             this.dataGridViewImageColumn2.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
             this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
             this.dataGridViewImageColumn2.ReadOnly = true;
+            // 
+            // btnVender
+            // 
+            this.btnVender.BackgroundImage = global::Sorteo_de_Animalitos.Properties.Resources.anadir_al_carrito;
+            this.btnVender.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnVender.FlatAppearance.BorderSize = 0;
+            this.btnVender.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVender.Location = new System.Drawing.Point(424, 18);
+            this.btnVender.Name = "btnVender";
+            this.btnVender.Size = new System.Drawing.Size(58, 47);
+            this.btnVender.TabIndex = 69;
+            this.btnVender.TabStop = false;
+            this.btnVender.UseVisualStyleBackColor = true;
+            this.btnVender.Click += new System.EventHandler(this.btnVender_Click);
+            // 
+            // btnGeneraSorteo
+            // 
+            this.btnGeneraSorteo.BackgroundImage = global::Sorteo_de_Animalitos.Properties.Resources.mas1281;
+            this.btnGeneraSorteo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnGeneraSorteo.FlatAppearance.BorderSize = 0;
+            this.btnGeneraSorteo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGeneraSorteo.Location = new System.Drawing.Point(214, 17);
+            this.btnGeneraSorteo.Name = "btnGeneraSorteo";
+            this.btnGeneraSorteo.Size = new System.Drawing.Size(58, 47);
+            this.btnGeneraSorteo.TabIndex = 57;
+            this.btnGeneraSorteo.TabStop = false;
+            this.btnGeneraSorteo.UseVisualStyleBackColor = true;
+            this.btnGeneraSorteo.Visible = false;
+            // 
+            // Cancelar
+            // 
+            this.Cancelar.HeaderText = "";
+            this.Cancelar.Image = global::Sorteo_de_Animalitos.Properties.Resources.cancelacion;
+            this.Cancelar.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.Cancelar.Name = "Cancelar";
+            this.Cancelar.ReadOnly = true;
+            // 
+            // Imprimir
+            // 
+            this.Imprimir.HeaderText = "";
+            this.Imprimir.Image = global::Sorteo_de_Animalitos.Properties.Resources.imprimir;
+            this.Imprimir.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.Imprimir.Name = "Imprimir";
+            this.Imprimir.ReadOnly = true;
             // 
             // controlVentas
             // 
@@ -331,10 +339,11 @@
         private System.Windows.Forms.DateTimePicker dtHora;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Button btnVender;
-        private System.Windows.Forms.DataGridViewImageColumn Imprimir;
         private Telerik.ReportViewer.WinForms.ReportViewer reportViewer1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtNoVenta;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.DataGridViewImageColumn Cancelar;
+        private System.Windows.Forms.DataGridViewImageColumn Imprimir;
     }
 }

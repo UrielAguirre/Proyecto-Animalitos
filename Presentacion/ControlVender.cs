@@ -33,6 +33,7 @@ namespace Sorteo_de_Animalitos.Presentacion
         {
             try
             {
+                panel1.Controls.Clear();
                 int cCuantosPorRen = 5;
                 int numeroButton = 0;               
 
@@ -256,8 +257,7 @@ namespace Sorteo_de_Animalitos.Presentacion
                     nuevaVenta();
                 }
                 txtAnimalito.Focus();
-            }
-            
+            }            
         }
                 
         private void nuevaVenta()
@@ -268,15 +268,17 @@ namespace Sorteo_de_Animalitos.Presentacion
             txtTelefono.Text = "";
             txtTotal.Text = "0.00";
             txtNombreCliente.Focus();
-
+                       
+            //InitializeComponent();
             TraeDatosSorteActual();
+            CreaBotones();
+            LlenaGrid();
         }
         private string NombreAnimalito(string cAnimalito)
         {
             string nombreAnimalito = "";
             try
-            {
-                
+            {                
                 string strSQL = "Select nombre From SIEAnimalitos Where animalito = '" + cAnimalito  + "'";
                 ConexionBD.Abrir();
                 SqlCommand cmd = new SqlCommand(strSQL, ConexionBD.conectar);

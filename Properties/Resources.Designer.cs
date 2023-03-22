@@ -123,6 +123,16 @@ namespace Sorteo_de_Animalitos.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap cancelacion {
+            get {
+                object obj = ResourceManager.GetObject("cancelacion", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap CandadoAbierto32 {
             get {
                 object obj = ResourceManager.GetObject("CandadoAbierto32", resourceCulture);

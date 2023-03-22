@@ -52,7 +52,7 @@ namespace Sorteo_de_Animalitos
             pbFoto.BackgroundImage.Save(ms, pbFoto.BackgroundImage.RawFormat);
             parametros.Foto = ms.GetBuffer();
 
-            parametros.Usuario = "SUP";
+            parametros.Usuario = Ambiente.Usuario;
             parametros.UsuFecha = DateTime.Now;
             parametros.UsuHora = Convert.ToDateTime("00:00");
             parametros.Estacion = "ESTACION01";
@@ -62,8 +62,9 @@ namespace Sorteo_de_Animalitos
                 //ReinciarPaginado();
                 LimpiaCajas();
                 MostrarAnimalitos();
+                txtAnimalito.Focus();
                 //PanelPacientesReg.Visible = false;
-                MessageBox.Show("Producto guardado correctamente", "Guarda registro", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                //MessageBox.Show("Producto guardado correctamente", "Guarda registro", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
@@ -81,7 +82,7 @@ namespace Sorteo_de_Animalitos
             dtgRegistros.Columns[1].Width = 50;
             dtgRegistros.Columns[2].Width = 100;
             dtgRegistros.Columns[3].Width = 350;
-            dtgRegistros.Columns[4].Width = 100;
+            dtgRegistros.Columns[4].Visible = false;
             dtgRegistros.Columns[5].Visible = false;
 
             dtgRegistros.Columns[4].DefaultCellStyle.Format = "N";

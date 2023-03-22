@@ -136,8 +136,8 @@
   <data name="configuraciones32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\configuraciones32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="aprobar(1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\aprobar(1)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="aprobar(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\aprobar(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="borrador" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\borrador.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -153,6 +153,9 @@
   </data>
   <data name="cerrar-sesion" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cerrar-sesion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="regreso128" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\regreso128.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="guardar-el-archivo128" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\guardar-el-archivo128.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -178,11 +181,11 @@
   <data name="salida" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\salida.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="aprobar(1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\aprobar(1)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="mas128" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mas128.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="aprobar(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\aprobar(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="trofeo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\trofeo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -199,7 +202,7 @@
   <data name="mas1281" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mas1281.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="regreso128" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\regreso128.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="cancelacion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cancelacion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

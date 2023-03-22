@@ -106,6 +106,7 @@
     <Compile Include="Logica\LUsuarios.cs" />
     <Compile Include="Logica\LUsuariosSuc.cs" />
     <Compile Include="Logica\LVender.cs" />
+    <Compile Include="Logica\LVentas.cs" />
     <Compile Include="Presentacion\controlCatalogoAnimalitos.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -375,6 +376,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\regreso128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancelacion.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
