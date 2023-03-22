@@ -1,4 +1,5 @@
-﻿using Sorteo_de_Animalitos.Datos;
+﻿using ProyectoErifer;
+using Sorteo_de_Animalitos.Datos;
 using Sorteo_de_Animalitos.Logica;
 using System;
 using System.Collections.Generic;
@@ -45,8 +46,13 @@ namespace Sorteo_de_Animalitos.Presentacion
                 {                    
                         Button btn = new Button();
                         btn.Visible = true;
-                        btn.Width = 80;
-                        btn.Height = 80;
+                        btn.Width = 120;
+                        btn.Height = 120;
+
+                        //Label lbl = new Label();
+                        //lbl.Visible = true;
+                        //lbl.Width = 80;
+                        //lbl.Height = 10;
 
                         byte[] b = ((Byte[])registros["foto"]);
                         System.IO.MemoryStream ms = new System.IO.MemoryStream(b);
@@ -54,11 +60,16 @@ namespace Sorteo_de_Animalitos.Presentacion
                         btn.BackgroundImage = Image.FromStream(ms);
                         btn.BackgroundImageLayout = ImageLayout.Zoom;
 
-                        btn.Name = "button" + numeroButton;
-                        btn.Text = btn + registros["animalito"].ToString();
-                        //btn.TextAlign = ContentAlignment.;
+                    //btn.Name = "button" + numeroButton;
+                    btn.Name = "button" + registros["animalito"].ToString();
+                       // btn.Text = btn + registros["animalito"].ToString();
 
-                        btn.Click += Btn_Click;
+                    //lbl.Name = "lbl" + numeroButton;
+                    //lbl.Text = btn + registros["animalito"].ToString();
+                    //btn.Font.;
+                    //btn.TextAlign = ContentAlignment.;
+
+                    btn.Click += Btn_Click;
 
                         panel1.Controls.Add(btn);
 
@@ -79,8 +90,12 @@ namespace Sorteo_de_Animalitos.Presentacion
             //throw new NotImplementedException();
             // MessageBox.Show(sender.ToString());
             //essageBox.Show(sender.);
-            string cAnimalito = "" + sender.ToString();
-            cAnimalito = cAnimalito.Substring(cAnimalito.Length - 3, 3);
+            Button botonSeleccionado = new Button();
+            botonSeleccionado = (Button) sender;
+
+            string cAnimalito = "";
+            cAnimalito = botonSeleccionado.Name.Substring(6, botonSeleccionado.Name.Length - 6);
+            //MessageBox.Show(cAnimalito);
             // MessageBox.Show(cAnimalito);
 
             VenderAnimalito(cAnimalito);
@@ -227,7 +242,7 @@ namespace Sorteo_de_Animalitos.Presentacion
             {
                 if (Convert.ToDouble(txtTotal.Text) == 0)
                 {
-                    MessageBox.Show("No puede cobrar una venta sin partidas");
+                    MessageBox.Show("No puede cobrar una venta sin partidas","Cobro", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                     return;
                 }
                 Ambiente.var1 = txtTotal.Text;
@@ -240,6 +255,7 @@ namespace Sorteo_de_Animalitos.Presentacion
                     Ambiente.var1 = "";
                     nuevaVenta();
                 }
+                txtAnimalito.Focus();
             }
             
         }
@@ -376,6 +392,7 @@ namespace Sorteo_de_Animalitos.Presentacion
             {
                 InsertarVenta(cAnimalito, NombreAnimalito(cAnimalito), ImportexAnimalito, IdSorteo);
             }
+            txtAnimalito.Focus();
         }
 
         private void TraeDatosSorteActual()
@@ -404,6 +421,29 @@ namespace Sorteo_de_Animalitos.Presentacion
             }
 
         }
+    
 
+        private void txtAnimalito_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.F5)
+            {
+                btnVender.PerformClick();
+            }
+
+            if (e.KeyCode == Keys.Down)
+            {
+                string cCondition = "";
+                if (!String.IsNullOrEmpty(txtAnimalito.Text))
+                {
+                    cCondition = cCondition + " And (animalito like '%" + txtAnimalito.Text + "%' Or nombre like '%" + txtAnimalito.Text + "%') ";
+                }
+                string strSQL = "Select Animalito, Nombre From SIEAnimalitos Where animalito <> '' " + cCondition;
+                frmBusqueda busqueda = new frmBusqueda(strSQL, this.Location.X + txtAnimalito.Location.X + 175, this.Location.Y + txtAnimalito.Location.Y + 200);
+                busqueda.ShowDialog();
+                txtAnimalito.Text = busqueda.cCodigoSeleccionado;
+            }
+        }
     }
+          
+    
 }

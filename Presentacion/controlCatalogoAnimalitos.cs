@@ -22,9 +22,7 @@ namespace Sorteo_de_Animalitos
             
             txtAnimalito.Focus();
             MostrarAnimalitos();            
-        }
-               
-
+        }               
         private void btnAdd_Click(object sender, EventArgs e)
         {
             if (Ambiente.AsignaPermisos(this.Name, sender, "Button") != 0)
@@ -33,7 +31,6 @@ namespace Sorteo_de_Animalitos
                 txtAnimalito.Enabled = true;
             }
         }
-
         private void GuardarAimalito()
         {
             if(txtAnimalito.Text.Length != 3)
@@ -90,8 +87,7 @@ namespace Sorteo_de_Animalitos
             dtgRegistros.Columns[4].DefaultCellStyle.Format = "N";
             dtgRegistros.Columns[4].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
             //dtgRegistros.Columns[2].Width = 100;
-        }
-       
+        }       
         private void ModificaAnimalito()
         {
             //PanelPaginado.Visible = false;
@@ -120,7 +116,6 @@ namespace Sorteo_de_Animalitos
                 MessageBox.Show(ex.Message);
             }
         }
-
         private void EliminarAnimalito()
         {
             string idAnimalito = dtgRegistros.SelectedCells[2].Value.ToString();
@@ -177,21 +172,17 @@ namespace Sorteo_de_Animalitos
                 }
             }
         }
-
         private void txtImporte_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
             {
                 e.Handled = true;
             }
-
             // solo 1 punto decimal
             if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
             {
                 e.Handled = true;
             }
-        }
-
-        
+        }        
     }
 }

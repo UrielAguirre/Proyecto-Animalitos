@@ -92,6 +92,7 @@ namespace Sorteo_de_Animalitos.Presentacion
             this.chkGrupo1.Name = "chkGrupo1";
             this.chkGrupo1.Size = new System.Drawing.Size(81, 22);
             this.chkGrupo1.TabIndex = 0;
+            this.chkGrupo1.TabStop = false;
             this.chkGrupo1.Text = "Grupo 1";
             this.chkGrupo1.UseVisualStyleBackColor = true;
             // 
@@ -99,6 +100,7 @@ namespace Sorteo_de_Animalitos.Presentacion
             // 
             this.btnCancelar.BackgroundImage = global::Sorteo_de_Animalitos.Properties.Resources.claro128;
             this.btnCancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnCancelar.FlatAppearance.BorderSize = 0;
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar.Location = new System.Drawing.Point(570, 349);
@@ -111,7 +113,7 @@ namespace Sorteo_de_Animalitos.Presentacion
             // 
             // btnAceptar
             // 
-            this.btnAceptar.BackgroundImage = global::Sorteo_de_Animalitos.Properties.Resources.guardar_el_archivo128;
+            this.btnAceptar.BackgroundImage = global::Sorteo_de_Animalitos.Properties.Resources.aprobar_1_2;
             this.btnAceptar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnAceptar.FlatAppearance.BorderSize = 0;
             this.btnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -132,6 +134,7 @@ namespace Sorteo_de_Animalitos.Presentacion
             this.chkGrupo16.Name = "chkGrupo16";
             this.chkGrupo16.Size = new System.Drawing.Size(89, 22);
             this.chkGrupo16.TabIndex = 61;
+            this.chkGrupo16.TabStop = false;
             this.chkGrupo16.Text = "Grupo 16";
             this.chkGrupo16.UseVisualStyleBackColor = true;
             // 
@@ -144,6 +147,7 @@ namespace Sorteo_de_Animalitos.Presentacion
             this.chkGrupo11.Name = "chkGrupo11";
             this.chkGrupo11.Size = new System.Drawing.Size(89, 22);
             this.chkGrupo11.TabIndex = 62;
+            this.chkGrupo11.TabStop = false;
             this.chkGrupo11.Text = "Grupo 11";
             this.chkGrupo11.UseVisualStyleBackColor = true;
             // 
@@ -156,6 +160,7 @@ namespace Sorteo_de_Animalitos.Presentacion
             this.chkGrupo6.Name = "chkGrupo6";
             this.chkGrupo6.Size = new System.Drawing.Size(81, 22);
             this.chkGrupo6.TabIndex = 63;
+            this.chkGrupo6.TabStop = false;
             this.chkGrupo6.Text = "Grupo 6";
             this.chkGrupo6.UseVisualStyleBackColor = true;
             // 
@@ -168,6 +173,7 @@ namespace Sorteo_de_Animalitos.Presentacion
             this.chkGrupo7.Name = "chkGrupo7";
             this.chkGrupo7.Size = new System.Drawing.Size(81, 22);
             this.chkGrupo7.TabIndex = 93;
+            this.chkGrupo7.TabStop = false;
             this.chkGrupo7.Text = "Grupo 7";
             this.chkGrupo7.UseVisualStyleBackColor = true;
             // 
@@ -180,6 +186,7 @@ namespace Sorteo_de_Animalitos.Presentacion
             this.chkGrupo12.Name = "chkGrupo12";
             this.chkGrupo12.Size = new System.Drawing.Size(89, 22);
             this.chkGrupo12.TabIndex = 92;
+            this.chkGrupo12.TabStop = false;
             this.chkGrupo12.Text = "Grupo 12";
             this.chkGrupo12.UseVisualStyleBackColor = true;
             // 
@@ -192,6 +199,7 @@ namespace Sorteo_de_Animalitos.Presentacion
             this.chkGrupo17.Name = "chkGrupo17";
             this.chkGrupo17.Size = new System.Drawing.Size(89, 22);
             this.chkGrupo17.TabIndex = 91;
+            this.chkGrupo17.TabStop = false;
             this.chkGrupo17.Text = "Grupo 17";
             this.chkGrupo17.UseVisualStyleBackColor = true;
             // 
@@ -204,6 +212,7 @@ namespace Sorteo_de_Animalitos.Presentacion
             this.chkGrupo2.Name = "chkGrupo2";
             this.chkGrupo2.Size = new System.Drawing.Size(81, 22);
             this.chkGrupo2.TabIndex = 84;
+            this.chkGrupo2.TabStop = false;
             this.chkGrupo2.Text = "Grupo 2";
             this.chkGrupo2.UseVisualStyleBackColor = true;
             // 
@@ -216,6 +225,7 @@ namespace Sorteo_de_Animalitos.Presentacion
             this.chkGrupo8.Name = "chkGrupo8";
             this.chkGrupo8.Size = new System.Drawing.Size(81, 22);
             this.chkGrupo8.TabIndex = 103;
+            this.chkGrupo8.TabStop = false;
             this.chkGrupo8.Text = "Grupo 8";
             this.chkGrupo8.UseVisualStyleBackColor = true;
             // 
@@ -228,6 +238,7 @@ namespace Sorteo_de_Animalitos.Presentacion
             this.chkGrupo13.Name = "chkGrupo13";
             this.chkGrupo13.Size = new System.Drawing.Size(89, 22);
             this.chkGrupo13.TabIndex = 102;
+            this.chkGrupo13.TabStop = false;
             this.chkGrupo13.Text = "Grupo 13";
             this.chkGrupo13.UseVisualStyleBackColor = true;
             // 
@@ -240,6 +251,7 @@ namespace Sorteo_de_Animalitos.Presentacion
             this.chkGrupo18.Name = "chkGrupo18";
             this.chkGrupo18.Size = new System.Drawing.Size(89, 22);
             this.chkGrupo18.TabIndex = 101;
+            this.chkGrupo18.TabStop = false;
             this.chkGrupo18.Text = "Grupo 18";
             this.chkGrupo18.UseVisualStyleBackColor = true;
             // 
@@ -252,6 +264,7 @@ namespace Sorteo_de_Animalitos.Presentacion
             this.chkGrupo3.Name = "chkGrupo3";
             this.chkGrupo3.Size = new System.Drawing.Size(81, 22);
             this.chkGrupo3.TabIndex = 94;
+            this.chkGrupo3.TabStop = false;
             this.chkGrupo3.Text = "Grupo 3";
             this.chkGrupo3.UseVisualStyleBackColor = true;
             // 
@@ -264,6 +277,7 @@ namespace Sorteo_de_Animalitos.Presentacion
             this.chkGrupo9.Name = "chkGrupo9";
             this.chkGrupo9.Size = new System.Drawing.Size(81, 22);
             this.chkGrupo9.TabIndex = 113;
+            this.chkGrupo9.TabStop = false;
             this.chkGrupo9.Text = "Grupo 9";
             this.chkGrupo9.UseVisualStyleBackColor = true;
             // 
@@ -276,6 +290,7 @@ namespace Sorteo_de_Animalitos.Presentacion
             this.chkGrupo14.Name = "chkGrupo14";
             this.chkGrupo14.Size = new System.Drawing.Size(89, 22);
             this.chkGrupo14.TabIndex = 112;
+            this.chkGrupo14.TabStop = false;
             this.chkGrupo14.Text = "Grupo 14";
             this.chkGrupo14.UseVisualStyleBackColor = true;
             // 
@@ -288,6 +303,7 @@ namespace Sorteo_de_Animalitos.Presentacion
             this.chkGrupo19.Name = "chkGrupo19";
             this.chkGrupo19.Size = new System.Drawing.Size(89, 22);
             this.chkGrupo19.TabIndex = 111;
+            this.chkGrupo19.TabStop = false;
             this.chkGrupo19.Text = "Grupo 19";
             this.chkGrupo19.UseVisualStyleBackColor = true;
             // 
@@ -300,6 +316,7 @@ namespace Sorteo_de_Animalitos.Presentacion
             this.chkGrupo4.Name = "chkGrupo4";
             this.chkGrupo4.Size = new System.Drawing.Size(81, 22);
             this.chkGrupo4.TabIndex = 104;
+            this.chkGrupo4.TabStop = false;
             this.chkGrupo4.Text = "Grupo 4";
             this.chkGrupo4.UseVisualStyleBackColor = true;
             // 
@@ -312,6 +329,7 @@ namespace Sorteo_de_Animalitos.Presentacion
             this.chkGrupo10.Name = "chkGrupo10";
             this.chkGrupo10.Size = new System.Drawing.Size(89, 22);
             this.chkGrupo10.TabIndex = 123;
+            this.chkGrupo10.TabStop = false;
             this.chkGrupo10.Text = "Grupo 10";
             this.chkGrupo10.UseVisualStyleBackColor = true;
             // 
@@ -324,6 +342,7 @@ namespace Sorteo_de_Animalitos.Presentacion
             this.chkGrupo15.Name = "chkGrupo15";
             this.chkGrupo15.Size = new System.Drawing.Size(89, 22);
             this.chkGrupo15.TabIndex = 122;
+            this.chkGrupo15.TabStop = false;
             this.chkGrupo15.Text = "Grupo 15";
             this.chkGrupo15.UseVisualStyleBackColor = true;
             // 
@@ -336,6 +355,7 @@ namespace Sorteo_de_Animalitos.Presentacion
             this.chkGrupo20.Name = "chkGrupo20";
             this.chkGrupo20.Size = new System.Drawing.Size(89, 22);
             this.chkGrupo20.TabIndex = 121;
+            this.chkGrupo20.TabStop = false;
             this.chkGrupo20.Text = "Grupo 20";
             this.chkGrupo20.UseVisualStyleBackColor = true;
             // 
@@ -348,6 +368,7 @@ namespace Sorteo_de_Animalitos.Presentacion
             this.chkGrupo5.Name = "chkGrupo5";
             this.chkGrupo5.Size = new System.Drawing.Size(81, 22);
             this.chkGrupo5.TabIndex = 114;
+            this.chkGrupo5.TabStop = false;
             this.chkGrupo5.Text = "Grupo 5";
             this.chkGrupo5.UseVisualStyleBackColor = true;
             // 
@@ -360,6 +381,7 @@ namespace Sorteo_de_Animalitos.Presentacion
             this.chkGrupo30.Name = "chkGrupo30";
             this.chkGrupo30.Size = new System.Drawing.Size(89, 22);
             this.chkGrupo30.TabIndex = 143;
+            this.chkGrupo30.TabStop = false;
             this.chkGrupo30.Text = "Grupo 30";
             this.chkGrupo30.UseVisualStyleBackColor = true;
             // 
@@ -372,6 +394,7 @@ namespace Sorteo_de_Animalitos.Presentacion
             this.chkGrupo35.Name = "chkGrupo35";
             this.chkGrupo35.Size = new System.Drawing.Size(89, 22);
             this.chkGrupo35.TabIndex = 142;
+            this.chkGrupo35.TabStop = false;
             this.chkGrupo35.Text = "Grupo 35";
             this.chkGrupo35.UseVisualStyleBackColor = true;
             // 
@@ -384,6 +407,7 @@ namespace Sorteo_de_Animalitos.Presentacion
             this.chkGrupo40.Name = "chkGrupo40";
             this.chkGrupo40.Size = new System.Drawing.Size(89, 22);
             this.chkGrupo40.TabIndex = 141;
+            this.chkGrupo40.TabStop = false;
             this.chkGrupo40.Text = "Grupo 40";
             this.chkGrupo40.UseVisualStyleBackColor = true;
             // 
@@ -396,6 +420,7 @@ namespace Sorteo_de_Animalitos.Presentacion
             this.chkGrupo25.Name = "chkGrupo25";
             this.chkGrupo25.Size = new System.Drawing.Size(89, 22);
             this.chkGrupo25.TabIndex = 140;
+            this.chkGrupo25.TabStop = false;
             this.chkGrupo25.Text = "Grupo 25";
             this.chkGrupo25.UseVisualStyleBackColor = true;
             // 
@@ -408,6 +433,7 @@ namespace Sorteo_de_Animalitos.Presentacion
             this.chkGrupo29.Name = "chkGrupo29";
             this.chkGrupo29.Size = new System.Drawing.Size(89, 22);
             this.chkGrupo29.TabIndex = 139;
+            this.chkGrupo29.TabStop = false;
             this.chkGrupo29.Text = "Grupo 29";
             this.chkGrupo29.UseVisualStyleBackColor = true;
             // 
@@ -420,6 +446,7 @@ namespace Sorteo_de_Animalitos.Presentacion
             this.chkGrupo34.Name = "chkGrupo34";
             this.chkGrupo34.Size = new System.Drawing.Size(89, 22);
             this.chkGrupo34.TabIndex = 138;
+            this.chkGrupo34.TabStop = false;
             this.chkGrupo34.Text = "Grupo 34";
             this.chkGrupo34.UseVisualStyleBackColor = true;
             // 
@@ -432,6 +459,7 @@ namespace Sorteo_de_Animalitos.Presentacion
             this.chkGrupo39.Name = "chkGrupo39";
             this.chkGrupo39.Size = new System.Drawing.Size(89, 22);
             this.chkGrupo39.TabIndex = 137;
+            this.chkGrupo39.TabStop = false;
             this.chkGrupo39.Text = "Grupo 39";
             this.chkGrupo39.UseVisualStyleBackColor = true;
             // 
@@ -444,6 +472,7 @@ namespace Sorteo_de_Animalitos.Presentacion
             this.chkGrupo24.Name = "chkGrupo24";
             this.chkGrupo24.Size = new System.Drawing.Size(89, 22);
             this.chkGrupo24.TabIndex = 136;
+            this.chkGrupo24.TabStop = false;
             this.chkGrupo24.Text = "Grupo 24";
             this.chkGrupo24.UseVisualStyleBackColor = true;
             // 
@@ -456,6 +485,7 @@ namespace Sorteo_de_Animalitos.Presentacion
             this.chkGrupo28.Name = "chkGrupo28";
             this.chkGrupo28.Size = new System.Drawing.Size(89, 22);
             this.chkGrupo28.TabIndex = 135;
+            this.chkGrupo28.TabStop = false;
             this.chkGrupo28.Text = "Grupo 28";
             this.chkGrupo28.UseVisualStyleBackColor = true;
             // 
@@ -468,6 +498,7 @@ namespace Sorteo_de_Animalitos.Presentacion
             this.chkGrupo33.Name = "chkGrupo33";
             this.chkGrupo33.Size = new System.Drawing.Size(89, 22);
             this.chkGrupo33.TabIndex = 134;
+            this.chkGrupo33.TabStop = false;
             this.chkGrupo33.Text = "Grupo 33";
             this.chkGrupo33.UseVisualStyleBackColor = true;
             // 
@@ -480,6 +511,7 @@ namespace Sorteo_de_Animalitos.Presentacion
             this.chkGrupo38.Name = "chkGrupo38";
             this.chkGrupo38.Size = new System.Drawing.Size(89, 22);
             this.chkGrupo38.TabIndex = 133;
+            this.chkGrupo38.TabStop = false;
             this.chkGrupo38.Text = "Grupo 38";
             this.chkGrupo38.UseVisualStyleBackColor = true;
             // 
@@ -492,6 +524,7 @@ namespace Sorteo_de_Animalitos.Presentacion
             this.chkGrupo23.Name = "chkGrupo23";
             this.chkGrupo23.Size = new System.Drawing.Size(89, 22);
             this.chkGrupo23.TabIndex = 132;
+            this.chkGrupo23.TabStop = false;
             this.chkGrupo23.Text = "Grupo 23";
             this.chkGrupo23.UseVisualStyleBackColor = true;
             // 
@@ -504,6 +537,7 @@ namespace Sorteo_de_Animalitos.Presentacion
             this.chkGrupo27.Name = "chkGrupo27";
             this.chkGrupo27.Size = new System.Drawing.Size(89, 22);
             this.chkGrupo27.TabIndex = 131;
+            this.chkGrupo27.TabStop = false;
             this.chkGrupo27.Text = "Grupo 27";
             this.chkGrupo27.UseVisualStyleBackColor = true;
             // 
@@ -516,6 +550,7 @@ namespace Sorteo_de_Animalitos.Presentacion
             this.chkGrupo32.Name = "chkGrupo32";
             this.chkGrupo32.Size = new System.Drawing.Size(89, 22);
             this.chkGrupo32.TabIndex = 130;
+            this.chkGrupo32.TabStop = false;
             this.chkGrupo32.Text = "Grupo 32";
             this.chkGrupo32.UseVisualStyleBackColor = true;
             // 
@@ -528,6 +563,7 @@ namespace Sorteo_de_Animalitos.Presentacion
             this.chkGrupo37.Name = "chkGrupo37";
             this.chkGrupo37.Size = new System.Drawing.Size(89, 22);
             this.chkGrupo37.TabIndex = 129;
+            this.chkGrupo37.TabStop = false;
             this.chkGrupo37.Text = "Grupo 37";
             this.chkGrupo37.UseVisualStyleBackColor = true;
             // 
@@ -540,6 +576,7 @@ namespace Sorteo_de_Animalitos.Presentacion
             this.chkGrupo22.Name = "chkGrupo22";
             this.chkGrupo22.Size = new System.Drawing.Size(89, 22);
             this.chkGrupo22.TabIndex = 128;
+            this.chkGrupo22.TabStop = false;
             this.chkGrupo22.Text = "Grupo 22";
             this.chkGrupo22.UseVisualStyleBackColor = true;
             // 
@@ -552,6 +589,7 @@ namespace Sorteo_de_Animalitos.Presentacion
             this.chkGrupo26.Name = "chkGrupo26";
             this.chkGrupo26.Size = new System.Drawing.Size(89, 22);
             this.chkGrupo26.TabIndex = 127;
+            this.chkGrupo26.TabStop = false;
             this.chkGrupo26.Text = "Grupo 26";
             this.chkGrupo26.UseVisualStyleBackColor = true;
             // 
@@ -564,6 +602,7 @@ namespace Sorteo_de_Animalitos.Presentacion
             this.chkGrupo31.Name = "chkGrupo31";
             this.chkGrupo31.Size = new System.Drawing.Size(89, 22);
             this.chkGrupo31.TabIndex = 126;
+            this.chkGrupo31.TabStop = false;
             this.chkGrupo31.Text = "Grupo 31";
             this.chkGrupo31.UseVisualStyleBackColor = true;
             // 
@@ -576,6 +615,7 @@ namespace Sorteo_de_Animalitos.Presentacion
             this.chkGrupo36.Name = "chkGrupo36";
             this.chkGrupo36.Size = new System.Drawing.Size(89, 22);
             this.chkGrupo36.TabIndex = 125;
+            this.chkGrupo36.TabStop = false;
             this.chkGrupo36.Text = "Grupo 36";
             this.chkGrupo36.UseVisualStyleBackColor = true;
             // 
@@ -588,6 +628,7 @@ namespace Sorteo_de_Animalitos.Presentacion
             this.chkGrupo21.Name = "chkGrupo21";
             this.chkGrupo21.Size = new System.Drawing.Size(89, 22);
             this.chkGrupo21.TabIndex = 124;
+            this.chkGrupo21.TabStop = false;
             this.chkGrupo21.Text = "Grupo 21";
             this.chkGrupo21.UseVisualStyleBackColor = true;
             // 
@@ -600,6 +641,7 @@ namespace Sorteo_de_Animalitos.Presentacion
             this.chkGrupo45.Name = "chkGrupo45";
             this.chkGrupo45.Size = new System.Drawing.Size(89, 22);
             this.chkGrupo45.TabIndex = 148;
+            this.chkGrupo45.TabStop = false;
             this.chkGrupo45.Text = "Grupo 45";
             this.chkGrupo45.UseVisualStyleBackColor = true;
             // 
@@ -612,6 +654,7 @@ namespace Sorteo_de_Animalitos.Presentacion
             this.chkGrupo44.Name = "chkGrupo44";
             this.chkGrupo44.Size = new System.Drawing.Size(89, 22);
             this.chkGrupo44.TabIndex = 147;
+            this.chkGrupo44.TabStop = false;
             this.chkGrupo44.Text = "Grupo 44";
             this.chkGrupo44.UseVisualStyleBackColor = true;
             // 
@@ -624,6 +667,7 @@ namespace Sorteo_de_Animalitos.Presentacion
             this.chkGrupo43.Name = "chkGrupo43";
             this.chkGrupo43.Size = new System.Drawing.Size(89, 22);
             this.chkGrupo43.TabIndex = 146;
+            this.chkGrupo43.TabStop = false;
             this.chkGrupo43.Text = "Grupo 43";
             this.chkGrupo43.UseVisualStyleBackColor = true;
             // 
@@ -636,6 +680,7 @@ namespace Sorteo_de_Animalitos.Presentacion
             this.chkGrupo42.Name = "chkGrupo42";
             this.chkGrupo42.Size = new System.Drawing.Size(89, 22);
             this.chkGrupo42.TabIndex = 145;
+            this.chkGrupo42.TabStop = false;
             this.chkGrupo42.Text = "Grupo 42";
             this.chkGrupo42.UseVisualStyleBackColor = true;
             // 
@@ -648,6 +693,7 @@ namespace Sorteo_de_Animalitos.Presentacion
             this.chkGrupo41.Name = "chkGrupo41";
             this.chkGrupo41.Size = new System.Drawing.Size(89, 22);
             this.chkGrupo41.TabIndex = 144;
+            this.chkGrupo41.TabStop = false;
             this.chkGrupo41.Text = "Grupo 41";
             this.chkGrupo41.UseVisualStyleBackColor = true;
             // 
@@ -660,6 +706,7 @@ namespace Sorteo_de_Animalitos.Presentacion
             this.chkGrupo50.Name = "chkGrupo50";
             this.chkGrupo50.Size = new System.Drawing.Size(89, 22);
             this.chkGrupo50.TabIndex = 153;
+            this.chkGrupo50.TabStop = false;
             this.chkGrupo50.Text = "Grupo 50";
             this.chkGrupo50.UseVisualStyleBackColor = true;
             // 
@@ -672,6 +719,7 @@ namespace Sorteo_de_Animalitos.Presentacion
             this.chkGrupo49.Name = "chkGrupo49";
             this.chkGrupo49.Size = new System.Drawing.Size(89, 22);
             this.chkGrupo49.TabIndex = 152;
+            this.chkGrupo49.TabStop = false;
             this.chkGrupo49.Text = "Grupo 49";
             this.chkGrupo49.UseVisualStyleBackColor = true;
             // 
@@ -684,6 +732,7 @@ namespace Sorteo_de_Animalitos.Presentacion
             this.chkGrupo48.Name = "chkGrupo48";
             this.chkGrupo48.Size = new System.Drawing.Size(89, 22);
             this.chkGrupo48.TabIndex = 151;
+            this.chkGrupo48.TabStop = false;
             this.chkGrupo48.Text = "Grupo 48";
             this.chkGrupo48.UseVisualStyleBackColor = true;
             // 
@@ -696,6 +745,7 @@ namespace Sorteo_de_Animalitos.Presentacion
             this.chkGrupo47.Name = "chkGrupo47";
             this.chkGrupo47.Size = new System.Drawing.Size(89, 22);
             this.chkGrupo47.TabIndex = 150;
+            this.chkGrupo47.TabStop = false;
             this.chkGrupo47.Text = "Grupo 47";
             this.chkGrupo47.UseVisualStyleBackColor = true;
             // 
@@ -708,6 +758,7 @@ namespace Sorteo_de_Animalitos.Presentacion
             this.chkGrupo46.Name = "chkGrupo46";
             this.chkGrupo46.Size = new System.Drawing.Size(89, 22);
             this.chkGrupo46.TabIndex = 149;
+            this.chkGrupo46.TabStop = false;
             this.chkGrupo46.Text = "Grupo 46";
             this.chkGrupo46.UseVisualStyleBackColor = true;
             // 
@@ -716,6 +767,7 @@ namespace Sorteo_de_Animalitos.Presentacion
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
+            this.CancelButton = this.btnCancelar;
             this.ClientSize = new System.Drawing.Size(647, 412);
             this.Controls.Add(this.chkGrupo50);
             this.Controls.Add(this.chkGrupo49);

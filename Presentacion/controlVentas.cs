@@ -124,11 +124,11 @@ namespace Sorteo_de_Animalitos
         {
             VistaPreviaTicket(nVenta);
             Documento = new PrintDocument();
-            Documento.PrinterSettings.PrinterName = "Microsoft Print to PDF";
+           // Documento.PrinterSettings.PrinterName = "Microsoft Print to PDF";
             if (Documento.PrinterSettings.IsValid)
             {
                 PrinterSettings printerSettings = new PrinterSettings();
-                printerSettings.PrinterName = "Microsoft Print to PDF";
+                printerSettings.PrinterName = Documento.PrinterSettings.PrinterName;
                 ReportProcessor reportProcesor = new ReportProcessor();
                 reportProcesor.PrintReport(reportViewer1.ReportSource, printerSettings);
             }

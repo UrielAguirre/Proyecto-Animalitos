@@ -28,20 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabGeneral = new System.Windows.Forms.TabPage();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.txtEmpresa = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
-            this.btnCancelarconfigGral = new System.Windows.Forms.Button();
             this.btnGuardaConfigGral = new System.Windows.Forms.Button();
             this.pbLogo = new System.Windows.Forms.PictureBox();
             this.chkValidaPermisos = new System.Windows.Forms.CheckBox();
             this.label18 = new System.Windows.Forms.Label();
-            this.txtEmpresa = new System.Windows.Forms.TextBox();
             this.tabSorteos = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
@@ -163,19 +163,38 @@
             // tabGeneral
             // 
             this.tabGeneral.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
+            this.tabGeneral.Controls.Add(this.panel10);
+            this.tabGeneral.Controls.Add(this.txtEmpresa);
             this.tabGeneral.Controls.Add(this.label19);
-            this.tabGeneral.Controls.Add(this.btnCancelarconfigGral);
             this.tabGeneral.Controls.Add(this.btnGuardaConfigGral);
             this.tabGeneral.Controls.Add(this.pbLogo);
             this.tabGeneral.Controls.Add(this.chkValidaPermisos);
             this.tabGeneral.Controls.Add(this.label18);
-            this.tabGeneral.Controls.Add(this.txtEmpresa);
             this.tabGeneral.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabGeneral.Location = new System.Drawing.Point(4, 22);
             this.tabGeneral.Name = "tabGeneral";
             this.tabGeneral.Size = new System.Drawing.Size(1240, 625);
             this.tabGeneral.TabIndex = 6;
             this.tabGeneral.Text = "General";
+            // 
+            // panel10
+            // 
+            this.panel10.BackColor = System.Drawing.Color.White;
+            this.panel10.Location = new System.Drawing.Point(214, 211);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(353, 2);
+            this.panel10.TabIndex = 89;
+            // 
+            // txtEmpresa
+            // 
+            this.txtEmpresa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
+            this.txtEmpresa.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtEmpresa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmpresa.ForeColor = System.Drawing.Color.White;
+            this.txtEmpresa.Location = new System.Drawing.Point(214, 186);
+            this.txtEmpresa.Name = "txtEmpresa";
+            this.txtEmpresa.Size = new System.Drawing.Size(353, 19);
+            this.txtEmpresa.TabIndex = 88;
             // 
             // label19
             // 
@@ -187,27 +206,13 @@
             this.label19.TabIndex = 87;
             this.label19.Text = "Logo de la empresa";
             // 
-            // btnCancelarconfigGral
-            // 
-            this.btnCancelarconfigGral.BackgroundImage = global::Sorteo_de_Animalitos.Properties.Resources.claro128;
-            this.btnCancelarconfigGral.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnCancelarconfigGral.FlatAppearance.BorderSize = 0;
-            this.btnCancelarconfigGral.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancelarconfigGral.Location = new System.Drawing.Point(465, 328);
-            this.btnCancelarconfigGral.Name = "btnCancelarconfigGral";
-            this.btnCancelarconfigGral.Size = new System.Drawing.Size(65, 51);
-            this.btnCancelarconfigGral.TabIndex = 86;
-            this.btnCancelarconfigGral.TabStop = false;
-            this.btnCancelarconfigGral.UseVisualStyleBackColor = true;
-            this.btnCancelarconfigGral.Visible = false;
-            // 
             // btnGuardaConfigGral
             // 
             this.btnGuardaConfigGral.BackgroundImage = global::Sorteo_de_Animalitos.Properties.Resources.guardar_el_archivo128;
             this.btnGuardaConfigGral.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnGuardaConfigGral.FlatAppearance.BorderSize = 0;
             this.btnGuardaConfigGral.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGuardaConfigGral.Location = new System.Drawing.Point(394, 328);
+            this.btnGuardaConfigGral.Location = new System.Drawing.Point(465, 332);
             this.btnGuardaConfigGral.Name = "btnGuardaConfigGral";
             this.btnGuardaConfigGral.Size = new System.Drawing.Size(65, 51);
             this.btnGuardaConfigGral.TabIndex = 85;
@@ -217,6 +222,8 @@
             // 
             // pbLogo
             // 
+            this.pbLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pbLogo.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pbLogo.Location = new System.Drawing.Point(35, 48);
             this.pbLogo.Name = "pbLogo";
             this.pbLogo.Size = new System.Drawing.Size(119, 122);
@@ -236,6 +243,7 @@
             this.chkValidaPermisos.TabStop = false;
             this.chkValidaPermisos.Text = "Validar asignación de permisos";
             this.chkValidaPermisos.UseVisualStyleBackColor = true;
+            this.chkValidaPermisos.Visible = false;
             // 
             // label18
             // 
@@ -246,14 +254,6 @@
             this.label18.Size = new System.Drawing.Size(169, 20);
             this.label18.TabIndex = 82;
             this.label18.Text = "Nombre de la empresa";
-            // 
-            // txtEmpresa
-            // 
-            this.txtEmpresa.Location = new System.Drawing.Point(231, 192);
-            this.txtEmpresa.Name = "txtEmpresa";
-            this.txtEmpresa.Size = new System.Drawing.Size(299, 26);
-            this.txtEmpresa.TabIndex = 81;
-            this.txtEmpresa.TabStop = false;
             // 
             // tabSorteos
             // 
@@ -335,13 +335,13 @@
             // 
             // btnGuardar
             // 
-            this.btnGuardar.BackgroundImage = global::Sorteo_de_Animalitos.Properties.Resources.mas128;
+            this.btnGuardar.BackgroundImage = global::Sorteo_de_Animalitos.Properties.Resources.guardar_el_archivo128;
             this.btnGuardar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnGuardar.FlatAppearance.BorderSize = 0;
             this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGuardar.Location = new System.Drawing.Point(109, 53);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(94, 50);
+            this.btnGuardar.Size = new System.Drawing.Size(69, 38);
             this.btnGuardar.TabIndex = 76;
             this.btnGuardar.TabStop = false;
             this.btnGuardar.UseVisualStyleBackColor = true;
@@ -523,9 +523,9 @@
             this.dtgRegistros.Name = "dtgRegistros";
             this.dtgRegistros.ReadOnly = true;
             this.dtgRegistros.RowHeadersWidth = 62;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgRegistros.RowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle21.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgRegistros.RowsDefaultCellStyle = dataGridViewCellStyle21;
             this.dtgRegistros.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
             this.dtgRegistros.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.White;
             this.dtgRegistros.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -723,14 +723,14 @@
             this.dtgUsuarios.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
             this.dtgUsuarios.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dtgUsuarios.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgUsuarios.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle22.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle22.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle22.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle22.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle22.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle22.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgUsuarios.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle22;
             this.dtgUsuarios.ColumnHeadersHeight = 35;
             this.dtgUsuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dtgUsuarios.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -740,9 +740,9 @@
             this.dtgUsuarios.MultiSelect = false;
             this.dtgUsuarios.Name = "dtgUsuarios";
             this.dtgUsuarios.ReadOnly = true;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgUsuarios.RowsDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle23.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgUsuarios.RowsDefaultCellStyle = dataGridViewCellStyle23;
             this.dtgUsuarios.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
             this.dtgUsuarios.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.White;
             this.dtgUsuarios.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -950,9 +950,9 @@
             this.dtgSucursales.MultiSelect = false;
             this.dtgSucursales.Name = "dtgSucursales";
             this.dtgSucursales.ReadOnly = true;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgSucursales.RowsDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle24.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgSucursales.RowsDefaultCellStyle = dataGridViewCellStyle24;
             this.dtgSucursales.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
             this.dtgSucursales.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.White;
             this.dtgSucursales.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -1007,7 +1007,7 @@
             this.btnCancelarSuc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelarSuc.Location = new System.Drawing.Point(423, 148);
             this.btnCancelarSuc.Name = "btnCancelarSuc";
-            this.btnCancelarSuc.Size = new System.Drawing.Size(65, 51);
+            this.btnCancelarSuc.Size = new System.Drawing.Size(69, 51);
             this.btnCancelarSuc.TabIndex = 76;
             this.btnCancelarSuc.TabStop = false;
             this.btnCancelarSuc.UseVisualStyleBackColor = true;
@@ -1020,9 +1020,9 @@
             this.btnGuardaSucursal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnGuardaSucursal.FlatAppearance.BorderSize = 0;
             this.btnGuardaSucursal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGuardaSucursal.Location = new System.Drawing.Point(341, 148);
+            this.btnGuardaSucursal.Location = new System.Drawing.Point(370, 148);
             this.btnGuardaSucursal.Name = "btnGuardaSucursal";
-            this.btnGuardaSucursal.Size = new System.Drawing.Size(65, 51);
+            this.btnGuardaSucursal.Size = new System.Drawing.Size(52, 51);
             this.btnGuardaSucursal.TabIndex = 75;
             this.btnGuardaSucursal.TabStop = false;
             this.btnGuardaSucursal.UseVisualStyleBackColor = true;
@@ -1071,9 +1071,9 @@
             this.dtgUsuariosSuc.MultiSelect = false;
             this.dtgUsuariosSuc.Name = "dtgUsuariosSuc";
             this.dtgUsuariosSuc.ReadOnly = true;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgUsuariosSuc.RowsDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle25.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle25.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgUsuariosSuc.RowsDefaultCellStyle = dataGridViewCellStyle25;
             this.dtgUsuariosSuc.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
             this.dtgUsuariosSuc.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.White;
             this.dtgUsuariosSuc.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -1219,7 +1219,7 @@
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(497, 521);
+            this.button1.Location = new System.Drawing.Point(455, 521);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(65, 51);
             this.button1.TabIndex = 84;
@@ -1411,11 +1411,11 @@
         private System.Windows.Forms.PictureBox pbLogo;
         private System.Windows.Forms.CheckBox chkValidaPermisos;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.TextBox txtEmpresa;
-        private System.Windows.Forms.Button btnCancelarconfigGral;
         private System.Windows.Forms.Button btnGuardaConfigGral;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.OpenFileDialog dlg;
         private System.IO.FileSystemWatcher fileSystemWatcher1;
+        private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.TextBox txtEmpresa;
     }
 }

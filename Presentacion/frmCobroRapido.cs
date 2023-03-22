@@ -108,7 +108,7 @@ namespace Sorteo_de_Animalitos.Presentacion
             else
             {
                 parametros.iCambio = 0;
-                MessageBox.Show("Debe liquidar la cuenta total");
+                MessageBox.Show("Debe liquidar la cuenta total", "Cobro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
             //MessageBox.Show("" + Convert.ToDouble(txtCambio.Text) * -1);
@@ -136,18 +136,17 @@ namespace Sorteo_de_Animalitos.Presentacion
         {
             VistaPreviaTicket();
             Documento = new PrintDocument();
-            Documento.PrinterSettings.PrinterName = "Microsoft Print to PDF";
+            
+            //Documento.PrinterSettings.PrinterName = "Microsoft Print to PDF";
             if (Documento.PrinterSettings.IsValid)
             {
                 PrinterSettings printerSettings = new PrinterSettings();
-                printerSettings.PrinterName = "Microsoft Print to PDF";
+                printerSettings.PrinterName = Documento.PrinterSettings.PrinterName;
                 ReportProcessor reportProcesor = new ReportProcessor();
                 reportProcesor.PrintReport(reportViewer1.ReportSource, printerSettings);
             }
-
         }
-
-       
+               
         private void VistaPreviaTicket()
         {
             Formatos.TicketVenta rpt = new Formatos.TicketVenta();
@@ -161,7 +160,7 @@ namespace Sorteo_de_Animalitos.Presentacion
         }
 
         private void txtIPago1_TextChanged_1(object sender, EventArgs e)
-        {
+        {            
             calculaCambio();
         }
 
@@ -221,6 +220,56 @@ namespace Sorteo_de_Animalitos.Presentacion
             txtIPago3.Text = DaFormato(iPago3);
         }
 
+        private void frmCobroRapido_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+            {
+                btnAtrasVentas.PerformClick();
+            }
+        }
+        
+        private void txtIPago1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                if (Convert.ToDouble(txtCambio.Text) >= 0)
+                {
+                    btnCobrar.Focus();
+                }
+            }
+        }
+
+        private void txtIPago2_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                if (Convert.ToDouble(txtCambio.Text) >= 0)
+                {
+                    btnCobrar.Focus();
+                }
+            }
+        }
+
+        private void txtIPago3_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                if (Convert.ToDouble(txtCambio.Text) >= 0)
+                {
+                    btnCobrar.Focus();
+                }
+            }
+            
+        }
+
+        private void txtIPago1_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                this.SelectNextControl((Control)sender, true, true, true, true);
+            }
+        }
+
         private void txtIPago3_KeyPress_1(object sender, KeyPressEventArgs e)
         {
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
@@ -255,7 +304,6 @@ namespace Sorteo_de_Animalitos.Presentacion
             {
                 e.Handled = true;
             }
-
             // solo 1 punto decimal
             if ((e.KeyChar == '.') && ((sender as System.Windows.Forms.TextBox).Text.IndexOf('.') > -1))
             {
@@ -267,18 +315,36 @@ namespace Sorteo_de_Animalitos.Presentacion
         {
             try
             {
+                if (String.IsNullOrEmpty(txtIPago1.Text)){
+                    iPago1 = 0;
+                }
+                else
+                {
+                    iPago1 = Convert.ToDouble(txtIPago1.Text);
+                }
+                if (String.IsNullOrEmpty(txtIPago2.Text)){
+                    iPago2 = 0;
+                }
+                else
+                {
+                    iPago2 = Convert.ToDouble(txtIPago2.Text);
+                }
+                if (String.IsNullOrEmpty(txtIPago3.Text)){
+                    iPago3 = 0;
+                }
+                else
+                {
+                    iPago3 = Convert.ToDouble(txtIPago3.Text);
+                }
+                
                 cambio = (iPago1 + iPago2 + iPago3) - iImporte;
                 txtCambio.Text = cambio.ToString("N");
             }
             catch (Exception ex)
             {
-                MessageBox.Show("" + ex.Message);
+                MessageBox.Show("" + ex.Message, "Cobro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
-       
-       
-       
-
     }
 }
 

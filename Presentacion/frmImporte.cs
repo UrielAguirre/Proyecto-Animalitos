@@ -83,5 +83,18 @@ namespace Sorteo_de_Animalitos.Presentacion
             Ambiente.var2 = "0";
             this.Dispose();
         }
+        
+        private void txtImporte_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnAceptar.PerformClick();
+            }
+
+            if(e.KeyCode == Keys.Escape)
+            {
+                btnCancelar.PerformClick();
+            }
+        }
     }
 }

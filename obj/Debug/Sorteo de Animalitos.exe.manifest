@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Sorteo de Animalitos.exe" size="247784">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Sorteo de Animalitos.exe" size="264168">
       <assemblyIdentity name="Sorteo de Animalitos" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>3MwK+SefCkm6IK85wCazB3G5Qphj9rVT8Ineou7xfqc=</dsig:DigestValue>
+        <dsig:DigestValue>Uf4qWRvWH7OafFdPROvl8QaUq1D2NDoVGVxKy5IB/3o=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

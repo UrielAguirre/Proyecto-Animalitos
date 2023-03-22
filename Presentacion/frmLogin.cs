@@ -16,9 +16,65 @@ namespace Sorteo_de_Animalitos.Presentacion
         public frmLogin()
         {
             InitializeComponent();
+            AsignaLogoEmpresa();
             llenaCombos();
         }
 
+        private void AsignaLogoEmpresa()
+        {
+            SqlDataReader registro;
+            try
+            {
+                string strSQL = "Select * From SIEConfigGeneral";
+                ConexionBD.Abrir();
+                SqlCommand cmd = new SqlCommand(strSQL, ConexionBD.conectar);
+                registro = cmd.ExecuteReader();
+                if (registro.Read())
+                {
+                    Ambiente.nombreEmpresa = "" + registro["empresa"].ToString();
+                    Ambiente.Logo = (byte[])registro["logo"];
+                    try
+                    {
+                        byte[] b = Ambiente.Logo;
+                        System.IO.MemoryStream ms = new System.IO.MemoryStream(b);
+                        //pbFoto.Image = Image.FromStream(ms);
+                        pictureBox1.BackgroundImage = null;
+                        pictureBox1.BackgroundImage = Image.FromStream(ms);
+                    }
+                    catch (Exception ex)
+                    {
+                        pictureBox1.BackgroundImage = null;
+                        MessageBox.Show(ex.Message);
+                    }
+                }
+                else
+                {
+                    Ambiente.nombreEmpresa = "Empresa, S.A. de C.V.";
+                    try
+                    {
+                        
+                        //System.IO.MemoryStream ms = new System.IO.MemoryStream(b);
+                        //pbFoto.Image = Image.FromStream(ms);
+                        pictureBox1.BackgroundImage = null;
+                        pictureBox1.BackgroundImage = Properties.Resources.logoPrueba;
+                    }
+                    catch (Exception ex)
+                    {
+                        pictureBox1.BackgroundImage = null;
+                        MessageBox.Show(ex.Message);
+                    }
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message + " " + ex.StackTrace);                
+            }
+            finally
+            {
+                ConexionBD.Cerrar();
+            }
+        }
         private void llenaCombos()
         {
             try
@@ -49,7 +105,6 @@ namespace Sorteo_de_Animalitos.Presentacion
                 ConexionBD.Cerrar();
             }
         }
-
         private void btnAceptar_Click(object sender, EventArgs e)
         {
             if(ValidaUsuario() == true && ValidaSucursal() == true)
@@ -59,8 +114,7 @@ namespace Sorteo_de_Animalitos.Presentacion
                 frmSorteoAnimalitos formaInicial = new frmSorteoAnimalitos();
                 formaInicial.Show();                
                 this.Visible=false;
-                formaInicial.Visible = true;
-                
+                formaInicial.Visible = true;                
             }
         }
 
@@ -100,11 +154,9 @@ namespace Sorteo_de_Animalitos.Presentacion
                 return false;
             }
             finally
-            {
-                
+            {                
                 ConexionBD.Cerrar();
-            }
-            
+            }            
         }
 
         private bool ValidaSucursal()
@@ -136,14 +188,12 @@ namespace Sorteo_de_Animalitos.Presentacion
             {                
                 ConexionBD.Cerrar();
             }
-
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
-
         private void frmLogin_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
@@ -156,32 +206,45 @@ namespace Sorteo_de_Animalitos.Presentacion
                     formaInicial.Show();
                     this.Visible = false;
                     formaInicial.Visible = true;
-
+                }
+            }
+        }
+        private void txtUsuario_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (!String.IsNullOrEmpty(txtUsuario.Text) && !String.IsNullOrEmpty(txtPass.Text) && !String.IsNullOrEmpty(cbSucursal.Text))
+            {
+                if (e.KeyCode == Keys.Enter)
+                {
+                    btnAceptar.PerformClick();
+                }
+            }
+        }
+        private void txtPass_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(!String.IsNullOrEmpty(txtUsuario.Text) && !String.IsNullOrEmpty(txtPass.Text) && !String.IsNullOrEmpty(cbSucursal.Text))
+            {
+                if (e.KeyCode == Keys.Enter)
+                {
+                    btnAceptar.PerformClick();
+                }
+            }            
+        }
+        private void cbSucursal_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (!String.IsNullOrEmpty(txtUsuario.Text) && !String.IsNullOrEmpty(txtPass.Text) && !String.IsNullOrEmpty(cbSucursal.Text))
+            {
+                if (e.KeyCode == Keys.Enter)
+                {
+                    btnAceptar.PerformClick();
                 }
             }
         }
 
-        private void txtUsuario_KeyDown(object sender, KeyEventArgs e)
+        private void txtUsuario_KeyUp(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
             {
-                btnAceptar.PerformClick();
-            }
-        }
-
-        private void txtPass_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Enter)
-            {
-                btnAceptar.PerformClick();
-            }
-        }
-
-        private void cbSucursal_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Enter)
-            {
-                btnAceptar.PerformClick();
+                this.SelectNextControl((Control)sender, true, true, true, true);
             }
         }
     }

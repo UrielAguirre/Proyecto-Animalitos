@@ -910,6 +910,12 @@ namespace Sorteo_de_Animalitos
         private void btnGuardaConfigGral_Click(object sender, EventArgs e)
         {
             GuardaConfigGral();
+            Ambiente.nombreEmpresa = txtEmpresa.Text;
+
+            frmSorteoAnimalitos formPadre = this.ParentForm as frmSorteoAnimalitos;
+            formPadre.lblEmpresa.Text = Ambiente.nombreEmpresa;
+
+            Ambiente.AsignaLogoEmpresa(formPadre.pbLogo);
         }
 
         private void GuardaConfigGral()
@@ -940,7 +946,7 @@ namespace Sorteo_de_Animalitos
                 MessageBox.Show("Configuración general guardada correctamente", "Configuración", MessageBoxButtons.OK, MessageBoxIcon.Information);               
             }
         }
-
+          
         private void MuestraConfigGral()
         {
             try
@@ -950,18 +956,25 @@ namespace Sorteo_de_Animalitos
                 SqlCommand cmd = new SqlCommand(strSQL, ConexionBD.conectar);
                 SqlDataReader registro = cmd.ExecuteReader();
 
-                while (registro.Read())
+                if (registro.Read())
                 {
                     txtEmpresa.Text = registro["empresa"].ToString();
-                    if (Convert.ToInt32(registro["sorteoAutomatico"].ToString()) == 1)
+                    if (Convert.ToInt32(registro["validaPermisosUsuarios"].ToString()) == 1)
                     {
-                        chkAutomatico.Checked = true;
+                        chkValidaPermisos.Checked = true;
                     }
                     else
                     {
-                        chkAutomatico.Checked = false;
+                        chkValidaPermisos.Checked = false;
                     }
+                    byte[] b = ((Byte[])registro["logo"]);
+                    System.IO.MemoryStream ms = new System.IO.MemoryStream(b);
+                    //pbFoto.Image = Image.FromStream(ms);
+                    pbLogo.BackgroundImage = null;
+                    pbLogo.BackgroundImage = Image.FromStream(ms);
                 }
+
+
             }
             catch (Exception ex)
             {

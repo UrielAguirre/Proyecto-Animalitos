@@ -101,3 +101,4 @@ F:\Debug All\Sorteo de Animalitos\Bin\Debug\Sorteo de Animalitos.application
 F:\Debug All\Sorteo de Animalitos\Bin\Debug\Sorteo de Animalitos.exe
 F:\Debug All\Sorteo de Animalitos\Bin\Debug\Sorteo de Animalitos.pdb
 F:\Uriel\SIE Desarrollos\Proyectos Desarrollos\Proyectos C#\Sorteo de Animalitos\obj\Debug\Sorteo_de_Animalitos.Presentacion.frmPermisos.resources
+F:\Uriel\SIE Desarrollos\Proyectos Desarrollos\Proyectos C#\Sorteo de Animalitos\obj\Debug\ProyectoErifer.frmBusqueda.resources

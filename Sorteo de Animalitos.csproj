@@ -149,6 +149,12 @@
     <Compile Include="Presentacion\Formatos\TicketVenta.Designer.cs">
       <DependentUpon>TicketVenta.cs</DependentUpon>
     </Compile>
+    <Compile Include="Presentacion\frmBusqueda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\frmBusqueda.designer.cs">
+      <DependentUpon>frmBusqueda.cs</DependentUpon>
+    </Compile>
     <Compile Include="Presentacion\frmCobroRapido.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -221,6 +227,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\Formatos\TicketVenta.resx">
       <DependentUpon>TicketVenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\frmBusqueda.resx">
+      <DependentUpon>frmBusqueda.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\frmCobroRapido.resx">
       <DependentUpon>frmCobroRapido.cs</DependentUpon>
@@ -360,6 +369,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\CandadoAbierto32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\caja-registradora.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\regreso128.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

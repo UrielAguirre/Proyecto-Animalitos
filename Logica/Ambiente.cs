@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -25,6 +26,8 @@ namespace Sorteo_de_Animalitos
         public static string Usuario = "";
         public static string Estacion = "";
         public static string Sucursal = "";
+        public static string nombreEmpresa = "";
+        public static byte[] Logo;
 
         public static bool candadoCerrado = false;
         public static bool usuarioPuedeCambiarPermisos = false;
@@ -70,12 +73,10 @@ namespace Sorteo_de_Animalitos
                 e.Handled = true;
             }
         }
-
         public bool validaPermisoEnControl()
         {
             return true;
         }
-
         public static int AsignaPermisos(string Modulo, object currentSender, string Tipo)
         {
             int permiso = 0;
@@ -160,8 +161,7 @@ namespace Sorteo_de_Animalitos
                     ConexionBD.Cerrar();
                 }
             }
-        }
-         
+        }         
         public static void usuarioCambiaPermisos()
         {
             /* Valida si el usuario pertenece al grupo 0, para validar permisos
@@ -193,6 +193,84 @@ namespace Sorteo_de_Animalitos
             }
             else{
                 usuarioPuedeCambiarPermisos = false;
+            }
+        }
+        public static void AsignaLogoEmpresa(PictureBox cajaLogo)
+        {
+            SqlDataReader registro;
+            try
+            {
+                string strSQL = "Select * From SIEConfigGeneral";
+                ConexionBD.Abrir();
+                SqlCommand cmd = new SqlCommand(strSQL, ConexionBD.conectar);
+                registro = cmd.ExecuteReader();
+                if (registro.Read())
+                {                   
+                    Ambiente.Logo = (byte[])registro["logo"];                   
+                    try
+                    {
+                        byte[] b = Ambiente.Logo;
+                        System.IO.MemoryStream ms = new System.IO.MemoryStream(b);                       
+                        cajaLogo.BackgroundImage = null;
+                        cajaLogo.BackgroundImage = Image.FromStream(ms);
+                    }
+                    catch (Exception ex)
+                    {
+                        cajaLogo.BackgroundImage = null;
+                        MessageBox.Show(ex.Message);
+                                               
+                    }
+                }
+                else
+                {                   
+                    try
+                    {
+                        cajaLogo.BackgroundImage = null;
+                        cajaLogo.BackgroundImage = Properties.Resources.logoPrueba;
+                    }
+                    catch (Exception ex)
+                    {
+                        cajaLogo.BackgroundImage = null;
+                        MessageBox.Show(ex.Message);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message + " " + ex.StackTrace);
+            }
+            finally
+            {
+                ConexionBD.Cerrar();
+            }
+        }
+        public static string AsignaLNombreEmpresa()
+        {
+            SqlDataReader registro;
+            try
+            {
+                string strSQL = "Select * From SIEConfigGeneral";
+                ConexionBD.Abrir();
+                SqlCommand cmd = new SqlCommand(strSQL, ConexionBD.conectar);
+                registro = cmd.ExecuteReader();
+                if (registro.Read())
+                {
+                    Ambiente.nombreEmpresa = "" + registro["empresa"].ToString();   
+                }
+                else
+                {
+                    Ambiente.nombreEmpresa = "Empresa, S.A. de C.V.";                   
+                }
+                return Ambiente.nombreEmpresa;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message + " " + ex.StackTrace);
+                return "";
+            }
+            finally
+            {
+                ConexionBD.Cerrar();
             }
         }
     }

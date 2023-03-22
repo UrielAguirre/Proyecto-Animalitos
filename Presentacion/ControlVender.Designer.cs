@@ -28,12 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panelVenta = new System.Windows.Forms.Panel();
             this.dtgProductos = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.txtSorteo = new System.Windows.Forms.TextBox();
+            this.txtSEGOB = new System.Windows.Forms.TextBox();
             this.btnAgregaAnimalito = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
             this.txtAnimalito = new System.Windows.Forms.TextBox();
@@ -52,8 +54,6 @@
             this.label15 = new System.Windows.Forms.Label();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.txtSEGOB = new System.Windows.Forms.TextBox();
-            this.txtSorteo = new System.Windows.Forms.TextBox();
             this.panelVenta.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgProductos)).BeginInit();
             this.panel2.SuspendLayout();
@@ -83,23 +83,23 @@
             this.dtgProductos.AllowUserToOrderColumns = true;
             this.dtgProductos.AllowUserToResizeRows = false;
             this.dtgProductos.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgProductos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgProductos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dtgProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dtgProductos.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dtgProductos.Location = new System.Drawing.Point(0, 0);
             this.dtgProductos.MultiSelect = false;
             this.dtgProductos.Name = "dtgProductos";
             this.dtgProductos.ReadOnly = true;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgProductos.RowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgProductos.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dtgProductos.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
             this.dtgProductos.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.White;
             this.dtgProductos.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -135,9 +135,31 @@
             this.panel2.Size = new System.Drawing.Size(1259, 109);
             this.panel2.TabIndex = 2;
             // 
+            // txtSorteo
+            // 
+            this.txtSorteo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
+            this.txtSorteo.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtSorteo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSorteo.ForeColor = System.Drawing.Color.White;
+            this.txtSorteo.Location = new System.Drawing.Point(545, 3);
+            this.txtSorteo.Name = "txtSorteo";
+            this.txtSorteo.Size = new System.Drawing.Size(347, 19);
+            this.txtSorteo.TabIndex = 48;
+            // 
+            // txtSEGOB
+            // 
+            this.txtSEGOB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
+            this.txtSEGOB.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtSEGOB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSEGOB.ForeColor = System.Drawing.Color.White;
+            this.txtSEGOB.Location = new System.Drawing.Point(545, 27);
+            this.txtSEGOB.Name = "txtSEGOB";
+            this.txtSEGOB.Size = new System.Drawing.Size(347, 19);
+            this.txtSEGOB.TabIndex = 47;
+            // 
             // btnAgregaAnimalito
             // 
-            this.btnAgregaAnimalito.BackgroundImage = global::Sorteo_de_Animalitos.Properties.Resources.guardar_el_archivo128;
+            this.btnAgregaAnimalito.BackgroundImage = global::Sorteo_de_Animalitos.Properties.Resources.mas128;
             this.btnAgregaAnimalito.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnAgregaAnimalito.FlatAppearance.BorderSize = 0;
             this.btnAgregaAnimalito.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -167,6 +189,8 @@
             this.txtAnimalito.Name = "txtAnimalito";
             this.txtAnimalito.Size = new System.Drawing.Size(134, 19);
             this.txtAnimalito.TabIndex = 39;
+            this.txtAnimalito.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtAnimalito_KeyDown);
+            
             // 
             // panel4
             // 
@@ -264,7 +288,7 @@
             // 
             // btnVender
             // 
-            this.btnVender.BackgroundImage = global::Sorteo_de_Animalitos.Properties.Resources.guardar_el_archivo128;
+            this.btnVender.BackgroundImage = global::Sorteo_de_Animalitos.Properties.Resources.caja_registradora;
             this.btnVender.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnVender.FlatAppearance.BorderSize = 0;
             this.btnVender.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -321,28 +345,6 @@
             this.dataGridViewImageColumn2.Image = global::Sorteo_de_Animalitos.Properties.Resources.lapiz;
             this.dataGridViewImageColumn2.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
             this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
-            // 
-            // txtSEGOB
-            // 
-            this.txtSEGOB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
-            this.txtSEGOB.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtSEGOB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSEGOB.ForeColor = System.Drawing.Color.White;
-            this.txtSEGOB.Location = new System.Drawing.Point(545, 27);
-            this.txtSEGOB.Name = "txtSEGOB";
-            this.txtSEGOB.Size = new System.Drawing.Size(347, 19);
-            this.txtSEGOB.TabIndex = 47;
-            // 
-            // txtSorteo
-            // 
-            this.txtSorteo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
-            this.txtSorteo.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtSorteo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSorteo.ForeColor = System.Drawing.Color.White;
-            this.txtSorteo.Location = new System.Drawing.Point(545, 3);
-            this.txtSorteo.Name = "txtSorteo";
-            this.txtSorteo.Size = new System.Drawing.Size(347, 19);
-            this.txtSorteo.TabIndex = 48;
             // 
             // ControlVender
             // 

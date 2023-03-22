@@ -1,4 +1,5 @@
-﻿using Sorteo_de_Animalitos.Datos;
+﻿using ProyectoErifer;
+using Sorteo_de_Animalitos.Datos;
 using Sorteo_de_Animalitos.Logica;
 using System;
 using System.Collections.Generic;
@@ -156,6 +157,28 @@ namespace Sorteo_de_Animalitos.Presentacion
 
         }
 
+        private void btnCancelar_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode == Keys.Escape)
+            {
+                btnCancelar.PerformClick();
+            }
+        }
 
+        private void txtAnimalito_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode == Keys.Down)
+            {
+                string cCondition = "";
+                if (!String.IsNullOrEmpty(txtAnimalito.Text))
+                {
+                    cCondition = cCondition + " And animalito like '%" + txtAnimalito.Text + "%'";
+                }
+                string strSQL = "Select Animalito, Nombre From SIEAnimalitos Where animalito <> '' " + cCondition;
+                frmBusqueda busqueda = new frmBusqueda(strSQL, this.Location.X + txtAnimalito.Location.X + 13, this.Location.Y + txtAnimalito.Location.Y + 80);
+                busqueda.ShowDialog();
+                txtAnimalito.Text = busqueda.cCodigoSeleccionado;
+            }
+        }
     }
 }

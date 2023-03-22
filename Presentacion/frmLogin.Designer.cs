@@ -80,7 +80,7 @@
             // 
             // btnAceptar
             // 
-            this.btnAceptar.BackgroundImage = global::Sorteo_de_Animalitos.Properties.Resources.guardar_el_archivo128;
+            this.btnAceptar.BackgroundImage = global::Sorteo_de_Animalitos.Properties.Resources.aprobar_1_2;
             this.btnAceptar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnAceptar.FlatAppearance.BorderSize = 0;
             this.btnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -94,8 +94,8 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.ErrorImage = global::Sorteo_de_Animalitos.Properties.Resources.logoPrueba;
-            this.pictureBox1.Image = global::Sorteo_de_Animalitos.Properties.Resources.logoPrueba1;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.ErrorImage = null;
             this.pictureBox1.Location = new System.Drawing.Point(12, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(99, 110);
@@ -124,6 +124,7 @@
             this.cbSucursal.Size = new System.Drawing.Size(202, 32);
             this.cbSucursal.TabIndex = 54;
             this.cbSucursal.KeyDown += new System.Windows.Forms.KeyEventHandler(this.cbSucursal_KeyDown);
+            this.cbSucursal.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtUsuario_KeyUp);
             // 
             // label2
             // 
@@ -155,6 +156,7 @@
             this.txtPass.Size = new System.Drawing.Size(115, 19);
             this.txtPass.TabIndex = 51;
             this.txtPass.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtPass_KeyDown);
+            this.txtPass.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtUsuario_KeyUp);
             // 
             // label1
             // 
@@ -185,12 +187,14 @@
             this.txtUsuario.Size = new System.Drawing.Size(115, 19);
             this.txtUsuario.TabIndex = 48;
             this.txtUsuario.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtUsuario_KeyDown);
+            this.txtUsuario.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtUsuario_KeyUp);
             // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
+            this.CancelButton = this.btnCancelar;
             this.ClientSize = new System.Drawing.Size(473, 255);
             this.Controls.Add(this.panel1);
             this.MaximizeBox = false;

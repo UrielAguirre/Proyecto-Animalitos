@@ -39,24 +39,6 @@ namespace Sorteo_de_Animalitos.Datos
 
         }
 
-        public void MostrarConfigGral(ref TextBox txtempresa)
-        {
-            try
-            {
-                ConexionBD.Abrir();
-                SqlDataAdapter da = new SqlDataAdapter("mostrarConfigGral", ConexionBD.conectar);
-                da.SelectCommand.CommandType = CommandType.StoredProcedure;                
-                da.Fill(dt);
-
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            finally
-            {
-                ConexionBD.Cerrar();
-            }
-        }
+       
     }
 }

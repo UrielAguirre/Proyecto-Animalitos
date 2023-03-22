@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel13 = new System.Windows.Forms.Panel();
+            this.reportViewer1 = new Telerik.ReportViewer.WinForms.ReportViewer();
             this.panel10 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -58,8 +60,6 @@
             this.label18 = new System.Windows.Forms.Label();
             this.btnAtrasVentas = new System.Windows.Forms.Button();
             this.btnCobrar = new System.Windows.Forms.Button();
-            this.panel13 = new System.Windows.Forms.Panel();
-            this.reportViewer1 = new Telerik.ReportViewer.WinForms.ReportViewer();
             this.panel1.SuspendLayout();
             this.panel13.SuspendLayout();
             this.SuspendLayout();
@@ -101,8 +101,26 @@
             this.panel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(555, 423);
+            this.panel1.Size = new System.Drawing.Size(535, 384);
             this.panel1.TabIndex = 1;
+            // 
+            // panel13
+            // 
+            this.panel13.Controls.Add(this.reportViewer1);
+            this.panel13.Location = new System.Drawing.Point(20, 226);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(268, 141);
+            this.panel13.TabIndex = 68;
+            // 
+            // reportViewer1
+            // 
+            this.reportViewer1.AccessibilityKeyMap = null;
+            this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.reportViewer1.Location = new System.Drawing.Point(0, 0);
+            this.reportViewer1.Name = "reportViewer1";
+            this.reportViewer1.Size = new System.Drawing.Size(268, 141);
+            this.reportViewer1.TabIndex = 0;
+            this.reportViewer1.Visible = false;
             // 
             // panel10
             // 
@@ -249,9 +267,11 @@
             this.txtIPago3.Location = new System.Drawing.Point(385, 129);
             this.txtIPago3.Name = "txtIPago3";
             this.txtIPago3.Size = new System.Drawing.Size(108, 19);
-            this.txtIPago3.TabIndex = 5;
+            this.txtIPago3.TabIndex = 2;
             this.txtIPago3.TextChanged += new System.EventHandler(this.txtIPago3_TextChanged);
+            this.txtIPago3.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtIPago3_KeyDown);
             this.txtIPago3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtIPago3_KeyPress_1);
+            this.txtIPago3.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtIPago1_KeyUp);
             this.txtIPago3.Leave += new System.EventHandler(this.txtIPago3_Leave_1);
             // 
             // panel6
@@ -273,6 +293,7 @@
             this.txtPago3.ReadOnly = true;
             this.txtPago3.Size = new System.Drawing.Size(62, 19);
             this.txtPago3.TabIndex = 4;
+            this.txtPago3.TabStop = false;
             this.txtPago3.Text = "TRA";
             // 
             // label2
@@ -302,9 +323,11 @@
             this.txtIPago2.Location = new System.Drawing.Point(385, 88);
             this.txtIPago2.Name = "txtIPago2";
             this.txtIPago2.Size = new System.Drawing.Size(108, 19);
-            this.txtIPago2.TabIndex = 3;
+            this.txtIPago2.TabIndex = 1;
             this.txtIPago2.TextChanged += new System.EventHandler(this.txtIPago2_TextChanged);
+            this.txtIPago2.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtIPago2_KeyDown);
             this.txtIPago2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtIPago2_KeyPress_1);
+            this.txtIPago2.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtIPago1_KeyUp);
             this.txtIPago2.Leave += new System.EventHandler(this.txtIPago2_Leave_1);
             // 
             // panel4
@@ -326,6 +349,7 @@
             this.txtPago2.ReadOnly = true;
             this.txtPago2.Size = new System.Drawing.Size(62, 19);
             this.txtPago2.TabIndex = 2;
+            this.txtPago2.TabStop = false;
             this.txtPago2.Text = "TAR";
             // 
             // label1
@@ -357,7 +381,9 @@
             this.txtIPago1.Size = new System.Drawing.Size(108, 19);
             this.txtIPago1.TabIndex = 0;
             this.txtIPago1.TextChanged += new System.EventHandler(this.txtIPago1_TextChanged_1);
+            this.txtIPago1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtIPago1_KeyDown);
             this.txtIPago1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtIPago1_KeyPress);
+            this.txtIPago1.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtIPago1_KeyUp);
             this.txtIPago1.Leave += new System.EventHandler(this.txtIPago1_Leave_1);
             // 
             // panel9
@@ -396,12 +422,13 @@
             // 
             this.btnAtrasVentas.BackgroundImage = global::Sorteo_de_Animalitos.Properties.Resources.claro128;
             this.btnAtrasVentas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnAtrasVentas.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnAtrasVentas.FlatAppearance.BorderSize = 0;
             this.btnAtrasVentas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAtrasVentas.Location = new System.Drawing.Point(440, 278);
             this.btnAtrasVentas.Name = "btnAtrasVentas";
             this.btnAtrasVentas.Size = new System.Drawing.Size(89, 74);
-            this.btnAtrasVentas.TabIndex = 47;
+            this.btnAtrasVentas.TabIndex = 4;
             this.btnAtrasVentas.TabStop = false;
             this.btnAtrasVentas.UseVisualStyleBackColor = true;
             this.btnAtrasVentas.Click += new System.EventHandler(this.btnAtrasVentas_Click_1);
@@ -415,40 +442,24 @@
             this.btnCobrar.Location = new System.Drawing.Point(357, 282);
             this.btnCobrar.Name = "btnCobrar";
             this.btnCobrar.Size = new System.Drawing.Size(77, 67);
-            this.btnCobrar.TabIndex = 46;
+            this.btnCobrar.TabIndex = 3;
             this.btnCobrar.TabStop = false;
             this.btnCobrar.Text = " ";
             this.btnCobrar.UseVisualStyleBackColor = true;
             this.btnCobrar.Click += new System.EventHandler(this.btnCobrar_Click);
             // 
-            // panel13
-            // 
-            this.panel13.Controls.Add(this.reportViewer1);
-            this.panel13.Location = new System.Drawing.Point(20, 226);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(268, 141);
-            this.panel13.TabIndex = 68;
-            // 
-            // reportViewer1
-            // 
-            this.reportViewer1.AccessibilityKeyMap = null;
-            this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.reportViewer1.Location = new System.Drawing.Point(0, 0);
-            this.reportViewer1.Name = "reportViewer1";
-            this.reportViewer1.Size = new System.Drawing.Size(268, 141);
-            this.reportViewer1.TabIndex = 0;
-            this.reportViewer1.Visible = false;
-            // 
             // frmCobroRapido
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(555, 423);
+            this.CancelButton = this.btnAtrasVentas;
+            this.ClientSize = new System.Drawing.Size(535, 384);
             this.Controls.Add(this.panel1);
             this.Name = "frmCobroRapido";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Cobro";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmCobroRapido_KeyDown);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel13.ResumeLayout(false);

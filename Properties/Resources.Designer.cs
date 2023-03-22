@@ -113,6 +113,16 @@ namespace Sorteo_de_Animalitos.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap caja_registradora {
+            get {
+                object obj = ResourceManager.GetObject("caja-registradora", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap CandadoAbierto32 {
             get {
                 object obj = ResourceManager.GetObject("CandadoAbierto32", resourceCulture);
@@ -266,6 +276,16 @@ namespace Sorteo_de_Animalitos.Properties {
         internal static System.Drawing.Bitmap pagar32 {
             get {
                 object obj = ResourceManager.GetObject("pagar32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap regreso128 {
+            get {
+                object obj = ResourceManager.GetObject("regreso128", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

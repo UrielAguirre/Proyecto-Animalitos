@@ -27,14 +27,72 @@ namespace Sorteo_de_Animalitos
             }
 
             Sorteo funcion = new Sorteo();
-            funcion.SorteosAutomaticos();            
+            funcion.SorteosAutomaticos();
+
+            lblEmpresa.Text = Ambiente.AsignaLNombreEmpresa();
+            Ambiente.AsignaLogoEmpresa(pbLogo); 
+
         }
 
+        private void AsignaLogoEmpresa()
+        {
+            SqlDataReader registro;
+            try
+            {
+                string strSQL = "Select * From SIEConfigGeneral";
+                ConexionBD.Abrir();
+                SqlCommand cmd = new SqlCommand(strSQL, ConexionBD.conectar);
+                registro = cmd.ExecuteReader();
+                if (registro.Read())
+                {
+                    Ambiente.nombreEmpresa = "" + registro["empresa"].ToString();
+                    Ambiente.Logo = (byte[])registro["logo"];
+                    lblEmpresa.Text = Ambiente.nombreEmpresa; 
+                try
+                    {
+                        byte[] b = Ambiente.Logo;
+                        System.IO.MemoryStream ms = new System.IO.MemoryStream(b);
+                        //pbFoto.Image = Image.FromStream(ms);
+                        pbLogo.BackgroundImage = null;
+                        pbLogo.BackgroundImage = Image.FromStream(ms);
+                    }
+                    catch (Exception ex)
+                    {
+                        pbLogo.BackgroundImage = null;
+                        MessageBox.Show(ex.Message);
+                    }
+                }
+                else
+                {
+                    Ambiente.nombreEmpresa = "Empresa, S.A. de C.V.";
+                    lblEmpresa.Text = Ambiente.nombreEmpresa;
+                    try
+                    {
+                        //System.IO.MemoryStream ms = new System.IO.MemoryStream(b);
+                        //pbFoto.Image = Image.FromStream(ms);
+                        pbLogo.BackgroundImage = null;
+                        pbLogo.BackgroundImage = Properties.Resources.logoPrueba;
+                    }
+                    catch (Exception ex)
+                    {
+                        pbLogo.BackgroundImage = null;
+                        MessageBox.Show(ex.Message);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message + " " + ex.StackTrace);
+            }
+            finally
+            {
+                ConexionBD.Cerrar();
+            }
+        }
         private void btnSalir_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
-              
         private void btnVender_Click_1(object sender, EventArgs e)
         {
             //panelPrincipal.Controls.Clear();
@@ -49,7 +107,6 @@ namespace Sorteo_de_Animalitos
                 panelPrincipal.Controls.Add(control);
             }
         }
-
         private void btnSorteos_Click_1(object sender, EventArgs e)
         {
             if (Ambiente.AsignaPermisos(this.Name, sender, "Button") != 0)
@@ -60,7 +117,6 @@ namespace Sorteo_de_Animalitos
                 panelPrincipal.Controls.Add(control);
             }
         }
-
         private void btnCatalogo_Click_1(object sender, EventArgs e)
         {
             if (Ambiente.AsignaPermisos(this.Name, sender, "Button") != 0)
@@ -70,13 +126,11 @@ namespace Sorteo_de_Animalitos
                 control.Dock = DockStyle.Fill;
                 panelPrincipal.Controls.Add(control);
             }
-        }
-              
+        }              
         private void frmSorteoAnimalitos_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
         }
-
         private void btnReportes_Click(object sender, EventArgs e)
         {
             if (Ambiente.AsignaPermisos(this.Name, sender, "Button") != 0)
@@ -87,13 +141,11 @@ namespace Sorteo_de_Animalitos
                 panelPrincipal.Controls.Add(control);
             }
         }
-
         private void timer1_Tick(object sender, EventArgs e)
         {
             Sorteo funcion = new Sorteo();
             funcion.SorteosAutomaticos();
         }
-
         private void btnConfiguracion_Click_1(object sender, EventArgs e)
         {                        
             if(Ambiente.AsignaPermisos(this.Name, sender, "Button") != 0)
