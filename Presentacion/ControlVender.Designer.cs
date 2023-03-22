@@ -190,7 +190,7 @@
             this.txtAnimalito.Size = new System.Drawing.Size(134, 19);
             this.txtAnimalito.TabIndex = 39;
             this.txtAnimalito.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtAnimalito_KeyDown);
-            
+            this.txtAnimalito.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtAnimalito_KeyPress);
             // 
             // panel4
             // 

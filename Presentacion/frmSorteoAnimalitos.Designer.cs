@@ -298,7 +298,8 @@
             this.Controls.Add(this.panel1);
             this.KeyPreview = true;
             this.Name = "frmSorteoAnimalitos";
-            this.Text = "Sistema de sorteos 1.0.0.Beta";
+            this.ShowIcon = false;
+            this.Text = "Sistema de sorteos 1.0.2.Beta";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmSorteoAnimalitos_FormClosed);
             this.panel1.ResumeLayout(false);

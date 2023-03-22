@@ -1,7 +1,9 @@
-﻿using System;
+﻿using ProyectoErifer;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Security.Cryptography;
@@ -15,7 +17,7 @@ namespace Sorteo_de_Animalitos
     public partial class controlCatalogoAnimalitos : UserControl
     {
         int desde = 1;
-        int hasta = 10;
+        int hasta = 10000;
         public controlCatalogoAnimalitos()
         {
             InitializeComponent();
@@ -184,6 +186,72 @@ namespace Sorteo_de_Animalitos
             {
                 e.Handled = true;
             }
-        }        
+        }
+
+        private void txtNombre_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                btnAdd.PerformClick();
+            }
+        }
+
+        private void txtAnimalito_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode == Keys.Down)
+            {
+                string cCondition = "";
+                if (!String.IsNullOrEmpty(txtAnimalito.Text))
+                {
+                    cCondition = cCondition + " And (animalito like '%" + txtAnimalito.Text + "%' Or nombre like '%" + txtAnimalito.Text + "%') ";
+                }
+                string strSQL = "Select Animalito, Nombre From SIEAnimalitos Where animalito <> '' " + cCondition;
+                frmBusqueda busqueda = new frmBusqueda(strSQL, this.Location.X + txtAnimalito.Location.X + 175, this.Location.Y + txtAnimalito.Location.Y + 200);
+                busqueda.ShowDialog();
+                txtAnimalito.Text = busqueda.cCodigoSeleccionado;
+            }
+        }
+
+        private void MuestraAnimalito()
+        {
+            try
+            {
+                ConexionBD.Abrir();
+                string strSQL = "Select * From SIEAnimalitos Where animalito = '" + txtAnimalito.Text + "'";
+                SqlCommand cmd = new SqlCommand(strSQL, ConexionBD.conectar);
+                SqlDataReader registro = cmd.ExecuteReader();
+                if (registro.Read())
+                {
+                    txtNombre.Text = "" + registro["nombre"].ToString();
+                }
+                else
+                {
+                    txtNombre.Text = "";
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("" + ex.Message + " " + ex.StackTrace);
+                
+            }
+            finally
+            {
+                ConexionBD.Cerrar();
+            }
+        }
+
+        private void txtAnimalito_Leave(object sender, EventArgs e)
+        {
+            MuestraAnimalito();
+        }
+
+        private void txtAnimalito_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                this.SelectNextControl((Control)sender, true, true, true, true);
+            }
+        }
     }
 }

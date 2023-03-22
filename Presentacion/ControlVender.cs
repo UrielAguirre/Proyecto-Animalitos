@@ -445,6 +445,14 @@ namespace Sorteo_de_Animalitos.Presentacion
                 txtAnimalito.Text = busqueda.cCodigoSeleccionado;
             }
         }
+
+        private void txtAnimalito_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if(e.KeyChar == (char)Keys.Enter)
+            {
+                btnAgregaAnimalito.PerformClick();
+            }
+        }
     }
           
     
